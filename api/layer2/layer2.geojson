@@ -1,0 +1,23 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "Layer2 - Nền 2",
+                "height": 90000000,
+                "color": "#cdcdcd",
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+
+                    ]
+                ]
+            },
+            "id": "pp1"
+        }
+    ]
+}
