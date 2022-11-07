@@ -1,6 +1,7 @@
 import layer1Layer1Import from './api/layer1/layer1.geojson' assert {type: 'json'};
 import layer1Stairs1Import from './api/layer1/stairs1.geojson' assert {type: 'json'};
 import layer2Layer2Import from './api/layer2/layer2.geojson' assert {type: 'json'};
+import layer3Layer3Import from './api/layer3/layer3_front/layer3_front.geojson' assert {type: 'json'};
 
 require([
     "esri/Map",
@@ -73,6 +74,25 @@ require([
         }
     };
 
+    // Layer3
+    // Nền 3
+    const layer3Layer3 = new GeoJSONLayer({
+        url: "./api/layer3/layer3_front/layer3_front.geojson"
+    })
+    layer3Layer3.renderer = {
+        type: "simple",
+        symbol: {
+            type: "polygon-3d",
+            symbolLayers: [{
+                type: "extrude",
+                size: layer3Layer3Import.features[0].properties.height,
+                material: {
+                    color: layer3Layer3Import.features[0].properties.color
+                }
+            }]
+        }
+    };
+
     // Cách tạo cột hình trụ
     // const cylinderLayer = new GraphicsLayer();
     // const point = { // Điểm tâm hình tròn đáy
@@ -104,6 +124,7 @@ require([
             layer1Layer1,
             stair1Layer,
             layer2Layer2,
+            layer3Layer3,
             // cylinderLayer
         ]
     })
