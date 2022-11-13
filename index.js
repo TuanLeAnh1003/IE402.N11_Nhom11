@@ -6,6 +6,14 @@ import layer3Layer3_rightImport from "./api/layer3/layer3_right/layer3_right.geo
 import layer3Layer3_backImport from "./api/layer3/layer3_back/layer3_back.geojson" assert { type: "json" };
 import layer3Layer3_leftImport from "./api/layer3/layer3_left/layer3_left.geojson" assert { type: "json" };
 
+import layer4Layer4_frontImport from "./api/layer4/layer4_front/layer4_front.geojson" assert { type: "json" };
+import layer4Layer4_columnsImport from "./api/layer4/layer4_columns/layer4_columns.geojson" assert { type: "json" };
+import layer4Layer4_wallGateImport from "./api/layer4/layer4_wallGate/layer4_wallGate.geojson" assert { type: "json" };
+import layer4Layer4_columnsEntranceImport from "./api/layer4/layer4_columnsEntrance/layer4_columnsEntrance.geojson" assert { type: "json" };
+import layer4Layer4_rightImport from "./api/layer4/layer4_right/layer4_right.geojson" assert { type: "json" };
+import layer4Layer4_leftImport from "./api/layer4/layer4_left/layer4_left.geojson" assert { type: "json" };
+import layer4Layer4_backImport from "./api/layer4/layer4_back/layer4_back.geojson" assert { type: "json" };
+
 require([
   "esri/Map",
   "esri/views/SceneView",
@@ -186,6 +194,139 @@ require([
     },
   };
 
+  const layer4Layer4_front = new GeoJSONLayer({
+    url: "./api/layer4/layer4_front/layer4_front.geojson",
+  });
+  layer4Layer4_front.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_frontImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_frontImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_wallGate = new GeoJSONLayer({
+    url: "./api/layer4/layer4_wallGate/layer4_wallGate.geojson",
+  });
+  layer4Layer4_wallGate.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_wallGateImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_wallGateImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_columns = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columns/layer4_columns.geojson",
+  });
+  layer4Layer4_columns.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_columnsEntrace = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsEntrance/layer4_columnsEntrance.geojson",
+  });
+  layer4Layer4_columnsEntrace.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsEntranceImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsEntranceImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_right = new GeoJSONLayer({
+    url: "./api/layer4/layer4_right/layer4_right.geojson",
+  });
+  layer4Layer4_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_rightImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_rightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_left = new GeoJSONLayer({
+    url: "./api/layer4/layer4_left/layer4_left.geojson",
+  });
+  layer4Layer4_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_leftImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_leftImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_back = new GeoJSONLayer({
+    url: "./api/layer4/layer4_back/layer4_back.geojson",
+  });
+  layer4Layer4_back.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_backImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_backImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
   // Cách tạo cột hình trụ
   // const cylinderLayer = new GraphicsLayer();
   // const point = { // Điểm tâm hình tròn đáy
@@ -221,6 +362,13 @@ require([
       layer3Layer3_right,
       layer3Layer3_back,
       layer3Layer3_left,
+      layer4Layer4_front,
+      layer4Layer4_wallGate,
+      // layer4Layer4_columns,
+      layer4Layer4_columnsEntrace,
+      layer4Layer4_right,
+      layer4Layer4_left,
+      layer4Layer4_back
       // cylinderLayer
     ],
   });
