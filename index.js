@@ -364,7 +364,7 @@ require([
       layer3Layer3_left,
       layer4Layer4_front,
       layer4Layer4_wallGate,
-      // layer4Layer4_columns,
+      layer4Layer4_columns,
       layer4Layer4_columnsEntrace,
       layer4Layer4_right,
       layer4Layer4_left,
