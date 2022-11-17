@@ -1,6 +1,9 @@
 import layer1Layer1Import from "./api/layer1/layer1.geojson" assert { type: "json" };
+import layer1DecorsImport from "./api/layer1/decors.geojson" assert { type: "json" };
 import layer1Stairs1Import from "./api/layer1/stairs1.geojson" assert { type: "json" };
+
 import layer2Layer2Import from "./api/layer2/layer2.geojson" assert { type: "json" };
+
 import layer3Layer3Import from "./api/layer3/layer3_front/layer3_front.geojson" assert { type: "json" };
 import layer3Layer3_rightImport from "./api/layer3/layer3_right/layer3_right.geojson" assert { type: "json" };
 import layer3Layer3_backImport from "./api/layer3/layer3_back/layer3_back.geojson" assert { type: "json" };
@@ -13,6 +16,7 @@ import layer4Layer4_columnsEntranceImport from "./api/layer4/layer4_columnsEntra
 import layer4Layer4_rightImport from "./api/layer4/layer4_right/layer4_right.geojson" assert { type: "json" };
 import layer4Layer4_leftImport from "./api/layer4/layer4_left/layer4_left.geojson" assert { type: "json" };
 import layer4Layer4_backImport from "./api/layer4/layer4_back/layer4_back.geojson" assert { type: "json" };
+import layer4Layer4_balconyImport from "./api/layer4/layer4_balcony/layer4_balcony.geojson" assert { type: "json" };
 
 require([
   "esri/Map",
@@ -68,7 +72,25 @@ require([
       ],
     },
   };
-
+  // Trang trí trang ơ
+  const decors1Layer = new GeoJSONLayer({
+    url: "./api/layer1/decors.geojson",
+  });
+  decors1Layer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer1DecorsImport.features[0].properties.height,
+          material: {
+            color: layer1DecorsImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
   // Cầu thang 1
   const stair1Layer = new GeoJSONLayer({
     url: "./api/layer1/stairs1.geojson",
@@ -261,9 +283,11 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4Layer4_columnsEntranceImport.features[0].properties.height,
+          size: layer4Layer4_columnsEntranceImport.features[0].properties
+            .height,
           material: {
-            color: layer4Layer4_columnsEntranceImport.features[0].properties.color,
+            color:
+              layer4Layer4_columnsEntranceImport.features[0].properties.color,
           },
         },
       ],
@@ -327,6 +351,25 @@ require([
     },
   };
 
+  const layer4Layer4_balcony = new GeoJSONLayer({
+    url: "./api/layer4/layer4_balcony/layer4_balcony.geojson",
+  });
+  layer4Layer4_balcony.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_balconyImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_balconyImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
   // Cách tạo cột hình trụ
   // const cylinderLayer = new GraphicsLayer();
   // const point = { // Điểm tâm hình tròn đáy
@@ -356,7 +399,9 @@ require([
     ground: "world-elevation",
     layers: [
       layer1Layer1,
+      decors1Layer,
       stair1Layer,
+
       layer2Layer2,
       layer3Layer3,
       layer3Layer3_right,
@@ -368,7 +413,8 @@ require([
       layer4Layer4_columnsEntrace,
       layer4Layer4_right,
       layer4Layer4_left,
-      layer4Layer4_back
+      layer4Layer4_back,
+      layer4Layer4_balcony,
       // cylinderLayer
     ],
   });
