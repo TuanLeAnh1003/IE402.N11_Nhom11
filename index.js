@@ -1,9 +1,20 @@
 import layer1Layer1Import from "./api/layer1/layer1.geojson" assert { type: "json" };
 import layer1DecorsImport from "./api/layer1/decors.geojson" assert { type: "json" };
 import layer1Stairs1Import from "./api/layer1/stairs1.geojson" assert { type: "json" };
+<<<<<<< HEAD
 
 import layer2Layer2Import from "./api/layer2/layer2.geojson" assert { type: "json" };
 
+=======
+import layer2Layer2_frontImport from "./api/layer2/layer2_front/layer2_front.geojson" assert { type: "json" };
+import layer2Layer2_front_inImport from "./api/layer2/layer2_front/layer2_front_in.geojson" assert { type: "json" };
+import layer2Layer2_rightImport from "./api/layer2/layer2_right/layer2_right.geojson" assert { type: "json" };
+import layer2Layer2_right_inImport from "./api/layer2/layer2_right/layer2_right_in.geojson" assert { type: "json" };
+import layer2Layer2_backImport from "./api/layer2/layer2_back/layer2_back.geojson" assert { type: "json" };
+import layer2Layer2_back_inImport from "./api/layer2/layer2_back/layer2_back_in.geojson" assert { type: "json" };
+import layer2Layer2_leftImport from "./api/layer2/layer2_left/layer2_left.geojson" assert { type: "json" };
+import layer2Layer2_left_inImport from "./api/layer2/layer2_left/layer2_left_in.geojson" assert { type: "json" };
+>>>>>>> 853e775adfd217fdb03723b9ed539ae4060dd0f3
 import layer3Layer3Import from "./api/layer3/layer3_front/layer3_front.geojson" assert { type: "json" };
 import layer3Layer3_rightImport from "./api/layer3/layer3_right/layer3_right.geojson" assert { type: "json" };
 import layer3Layer3_backImport from "./api/layer3/layer3_back/layer3_back.geojson" assert { type: "json" };
@@ -112,20 +123,159 @@ require([
   };
 
   // Layer2
-  // Nền 2
-  const layer2Layer2 = new GeoJSONLayer({
-    url: "./api/layer2/layer2.geojson",
+  // Nền 2 - mặt trước
+  const layer2Layer2_front = new GeoJSONLayer({
+    url: "./api/layer2/layer2_front/layer2_front.geojson",
   });
-  layer2Layer2.renderer = {
+  layer2Layer2_front.renderer = {
     type: "simple",
     symbol: {
       type: "polygon-3d",
       symbolLayers: [
         {
           type: "extrude",
-          size: layer2Layer2Import.features[0].properties.height,
+          size: layer2Layer2_frontImport.features[0].properties.height,
           material: {
-            color: layer2Layer2Import.features[0].properties.color,
+            color: layer2Layer2_frontImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer2Layer2_front_in = new GeoJSONLayer({
+    url: "./api/layer2/layer2_front/layer2_front_in.geojson",
+  });
+  layer2Layer2_front_in.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer2Layer2_front_inImport.features[0].properties.height,
+          material: {
+            color: layer2Layer2_front_inImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  // Layer2
+  // Nền 2 - mặt phải
+  const layer2Layer2_right = new GeoJSONLayer({
+    url: "./api/layer2/layer2_right/layer2_right.geojson",
+  });
+  layer2Layer2_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer2Layer2_rightImport.features[0].properties.height,
+          material: {
+            color: layer2Layer2_rightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer2Layer2_right_in = new GeoJSONLayer({
+    url: "./api/layer2/layer2_right/layer2_right_in.geojson",
+  });
+  layer2Layer2_right_in.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer2Layer2_right_inImport.features[0].properties.height,
+          material: {
+            color: layer2Layer2_right_inImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  // Layer2
+  // Nền 2 - mặt sau
+  const layer2Layer2_back = new GeoJSONLayer({
+    url: "./api/layer2/layer2_back/layer2_back.geojson",
+  });
+  layer2Layer2_back.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer2Layer2_backImport.features[0].properties.height,
+          material: {
+            color: layer2Layer2_backImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer2Layer2_back_in = new GeoJSONLayer({
+    url: "./api/layer2/layer2_back/layer2_back_in.geojson",
+  });
+  layer2Layer2_back_in.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer2Layer2_back_inImport.features[0].properties.height,
+          material: {
+            color: layer2Layer2_back_inImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  // Layer2
+  // Nền 2 - mặt trái
+  const layer2Layer2_left = new GeoJSONLayer({
+    url: "./api/layer2/layer2_left/layer2_left.geojson",
+  });
+  layer2Layer2_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer2Layer2_leftImport.features[0].properties.height,
+          material: {
+            color: layer2Layer2_leftImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer2Layer2_left_in = new GeoJSONLayer({
+    url: "./api/layer2/layer2_left/layer2_left_in.geojson",
+  });
+  layer2Layer2_left_in.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer2Layer2_left_inImport.features[0].properties.height,
+          material: {
+            color: layer2Layer2_left_inImport.features[0].properties.color,
           },
         },
       ],
@@ -401,8 +551,19 @@ require([
       layer1Layer1,
       decors1Layer,
       stair1Layer,
+<<<<<<< HEAD
 
       layer2Layer2,
+=======
+      layer2Layer2_front,
+      layer2Layer2_front_in,
+      layer2Layer2_right,
+      layer2Layer2_right_in,
+      layer2Layer2_left,
+      layer2Layer2_left_in,
+      layer2Layer2_back,
+      layer2Layer2_back_in,
+>>>>>>> 853e775adfd217fdb03723b9ed539ae4060dd0f3
       layer3Layer3,
       layer3Layer3_right,
       layer3Layer3_back,
