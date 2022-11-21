@@ -37,8 +37,6 @@ import layer4Layer4_columnsEntranceImport from "./api/layer4/layer4_columnsEntra
 import layer4Layer4_rightImport from "./api/layer4/layer4_right/layer4_right.geojson" assert { type: "json" };
 import layer4Layer4_leftImport from "./api/layer4/layer4_left/layer4_left.geojson" assert { type: "json" };
 import layer4Layer4_backImport from "./api/layer4/layer4_back/layer4_back.geojson" assert { type: "json" };
-import layer4Layer4_balconyImport from "./api/layer4/layer4_balcony/layer4_balcony.geojson" assert { type: "json" };
-
 
 require([
   "esri/Map",
@@ -569,9 +567,12 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4Layer4_balcony_smallcrossbarImport.features[0].properties.height,
+          size: layer4Layer4_balcony_smallcrossbarImport.features[0].properties
+            .height,
           material: {
-            color: layer4Layer4_balcony_smallcrossbarImport.features[0].properties.color,
+            color:
+              layer4Layer4_balcony_smallcrossbarImport.features[0].properties
+                .color,
           },
         },
       ],
@@ -588,9 +589,11 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4Layer4_balcony_crossbarImport.features[0].properties.height,
+          size: layer4Layer4_balcony_crossbarImport.features[0].properties
+            .height,
           material: {
-            color: layer4Layer4_balcony_crossbarImport.features[0].properties.color,
+            color:
+              layer4Layer4_balcony_crossbarImport.features[0].properties.color,
           },
         },
       ],
@@ -608,7 +611,8 @@ require([
           type: "extrude",
           size: layer4Layer4_balcony_onbarImport.features[0].properties.height,
           material: {
-            color: layer4Layer4_balcony_onbarImport.features[0].properties.color,
+            color:
+              layer4Layer4_balcony_onbarImport.features[0].properties.color,
           },
         },
       ],
@@ -646,15 +650,13 @@ require([
           type: "extrude",
           size: layer4Layer4_balcony_glassImport.features[0].properties.height,
           material: {
-            color: layer4Layer4_balcony_glassImport.features[0].properties.color,
+            color:
+              layer4Layer4_balcony_glassImport.features[0].properties.color,
           },
         },
       ],
     },
   };
-
-
-
 
   const layer4Layer4_columns = new GeoJSONLayer({
     url: "./api/layer4/layer4_columns/layer4_columns.geojson",
@@ -747,25 +749,6 @@ require([
           size: layer4Layer4_backImport.features[0].properties.height,
           material: {
             color: layer4Layer4_backImport.features[0].properties.color,
-          },
-        },
-      ],
-    },
-  };
-
-  const layer4Layer4_balcony = new GeoJSONLayer({
-    url: "./api/layer4/layer4_balcony/layer4_balcony.geojson",
-  });
-  layer4Layer4_balcony.renderer = {
-    type: "simple",
-    symbol: {
-      type: "polygon-3d",
-      symbolLayers: [
-        {
-          type: "extrude",
-          size: layer4Layer4_balconyImport.features[0].properties.height,
-          material: {
-            color: layer4Layer4_balconyImport.features[0].properties.color,
           },
         },
       ],
