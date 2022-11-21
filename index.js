@@ -28,11 +28,17 @@ import layer3Layer3_leftImport from "./api/layer3/layer3_left/layer3_left.geojso
 import layer4Layer4_frontImport from "./api/layer4/layer4_front/layer4_front.geojson" assert { type: "json" };
 import layer4Layer4_columnsImport from "./api/layer4/layer4_columns/layer4_columns.geojson" assert { type: "json" };
 import layer4Layer4_wallGateImport from "./api/layer4/layer4_wallGate/layer4_wallGate.geojson" assert { type: "json" };
+import layer4Layer4_balcony_smallcrossbarImport from "./api/layer4/layer4_wallGate/layer4_balcony_smallcrossbar.geojson" assert { type: "json" };
+import layer4Layer4_balcony_crossbarImport from "./api/layer4/layer4_wallGate/layer4_balcony_crossbar.geojson" assert { type: "json" };
+import layer4Layer4_balcony_onbarImport from "./api/layer4/layer4_wallGate/layer4_balcony_onbar.geojson" assert { type: "json" };
+import layer4Layer4_balconyImport from "./api/layer4/layer4_wallGate/layer4_balcony.geojson" assert { type: "json" };
+import layer4Layer4_balcony_glassImport from "./api/layer4/layer4_wallGate/layer4_balcony_glass.geojson" assert { type: "json" };
 import layer4Layer4_columnsEntranceImport from "./api/layer4/layer4_columnsEntrance/layer4_columnsEntrance.geojson" assert { type: "json" };
 import layer4Layer4_rightImport from "./api/layer4/layer4_right/layer4_right.geojson" assert { type: "json" };
 import layer4Layer4_leftImport from "./api/layer4/layer4_left/layer4_left.geojson" assert { type: "json" };
 import layer4Layer4_backImport from "./api/layer4/layer4_back/layer4_back.geojson" assert { type: "json" };
 import layer4Layer4_balconyImport from "./api/layer4/layer4_balcony/layer4_balcony.geojson" assert { type: "json" };
+
 
 require([
   "esri/Map",
@@ -553,6 +559,103 @@ require([
     },
   };
 
+  const layer4Layer4_balcony_smallcrossbar = new GeoJSONLayer({
+    url: "./api/layer4/layer4_wallGate/layer4_balcony_smallcrossbar.geojson",
+  });
+  layer4Layer4_balcony_smallcrossbar.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_balcony_smallcrossbarImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_balcony_smallcrossbarImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_balcony_crossbar = new GeoJSONLayer({
+    url: "./api/layer4/layer4_wallGate/layer4_balcony_crossbar.geojson",
+  });
+  layer4Layer4_balcony_crossbar.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_balcony_crossbarImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_balcony_crossbarImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+  const layer4Layer4_balcony_onbar = new GeoJSONLayer({
+    url: "./api/layer4/layer4_wallGate/layer4_balcony_onbar.geojson",
+  });
+  layer4Layer4_balcony_onbar.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_balcony_onbarImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_balcony_onbarImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_balcony = new GeoJSONLayer({
+    url: "./api/layer4/layer4_wallGate/layer4_balcony.geojson",
+  });
+  layer4Layer4_balcony.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_balconyImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_balconyImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_balcony_glass = new GeoJSONLayer({
+    url: "./api/layer4/layer4_wallGate/layer4_balcony_glass.geojson",
+  });
+  layer4Layer4_balcony_glass.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_balcony_glassImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_balcony_glassImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+
+
+
   const layer4Layer4_columns = new GeoJSONLayer({
     url: "./api/layer4/layer4_columns/layer4_columns.geojson",
   });
@@ -722,6 +825,11 @@ require([
       layer3Layer3_left,
       layer4Layer4_front,
       layer4Layer4_wallGate,
+      layer4Layer4_balcony_smallcrossbar,
+      layer4Layer4_balcony_crossbar,
+      layer4Layer4_balcony_onbar,
+      layer4Layer4_balcony,
+      layer4Layer4_balcony_glass,
       // layer4Layer4_columns,
       layer4Layer4_columnsEntrace,
       layer4Layer4_right,
