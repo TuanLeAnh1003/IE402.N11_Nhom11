@@ -13,6 +13,7 @@ import layer4Layer4_columnsEntranceImport from "./api/layer4/layer4_columnsEntra
 import layer4Layer4_rightImport from "./api/layer4/layer4_right/layer4_right.geojson" assert { type: "json" };
 import layer4Layer4_leftImport from "./api/layer4/layer4_left/layer4_left.geojson" assert { type: "json" };
 import layer4Layer4_backImport from "./api/layer4/layer4_back/layer4_back.geojson" assert { type: "json" };
+import layer4Layer4_columnsRightImport from "./api/layer4/layer4_columnsRight/layer4_columnsRight.geojson" assert { type: "json" };
 
 require([
   "esri/Map",
@@ -327,6 +328,25 @@ require([
     },
   };
 
+  const layer4Layer4_columnsRight = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsRight/layer4_columnsRight.geojson",
+  });
+  layer4Layer4_columnsRight.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsRightImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsRightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
   // Cách tạo cột hình trụ
   // const cylinderLayer = new GraphicsLayer();
   // const point = { // Điểm tâm hình tròn đáy
@@ -368,7 +388,8 @@ require([
       layer4Layer4_columnsEntrace,
       layer4Layer4_right,
       layer4Layer4_left,
-      layer4Layer4_back
+      layer4Layer4_back,
+      layer4Layer4_columnsRight
       // cylinderLayer
     ],
   });
