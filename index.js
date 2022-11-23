@@ -7,6 +7,10 @@ import layer1Decors_backImport from "./api/layer1/decors_back/decors.geojson" as
 import layer1Decors_up_backImport from "./api/layer1/decors_back/decors_up.geojson" assert { type: "json" };
 import layer1Decors_sharp_brick_backImport from "./api/layer1/decors_back/decors_sharp_brick.geojson" assert { type: "json" };
 import layer1Decors_tomb_backImport from "./api/layer1/decors_back/decors_tomb.geojson" assert { type: "json" };
+import layer1Decors_rightImport from "./api/layer1/decors_right/decors.geojson" assert { type: "json" };
+import layer1Decors_up_rightImport from "./api/layer1/decors_right/decors_up.geojson" assert { type: "json" };
+import layer1Decors_sharp_brick_rightImport from "./api/layer1/decors_right/decors_sharp_brick.geojson" assert { type: "json" };
+import layer1Decors_tomb_rightImport from "./api/layer1/decors_right/decors_tomb.geojson" assert { type: "json" };
 
 import layer1Stairs1Import from "./api/layer1/stairs1.geojson" assert { type: "json" };
 
@@ -249,6 +253,88 @@ require([
           size: layer1Decors_tomb_backImport.features[0].properties.height,
           material: {
             color: layer1Decors_tomb_backImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  //--------MẶT PHẢI-------------------------------------------------------
+  const decors_right1Layer = new GeoJSONLayer({
+    url: "./api/layer1/decors_right/decors.geojson",
+  });
+  decors_right1Layer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer1Decors_rightImport.features[0].properties.height,
+          material: {
+            color: layer1Decors_rightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  //trang trí ngựa ngựa
+  const decors1_up_rightLayer = new GeoJSONLayer({
+    url: "./api/layer1/decors_right/decors_up.geojson",
+  });
+  decors1_up_rightLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer1Decors_up_rightImport.features[0].properties.height,
+          material: {
+            color: layer1Decors_up_rightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  //chéo chéo
+  const decors1_sharp_brick_rightLayer = new GeoJSONLayer({
+    url: "./api/layer1/decors_right/decors_sharp_brick.geojson",
+  });
+  decors1_sharp_brick_rightLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer1Decors_sharp_brick_rightImport.features[0].properties
+            .height,
+          material: {
+            color:
+              layer1Decors_sharp_brick_rightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  //mộ
+  const decors1_tomb_rightLayer = new GeoJSONLayer({
+    url: "./api/layer1/decors_right/decors_tomb.geojson",
+  });
+  decors1_tomb_rightLayer.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer1Decors_tomb_rightImport.features[0].properties.height,
+          material: {
+            color: layer1Decors_tomb_rightImport.features[0].properties.color,
           },
         },
       ],
@@ -792,6 +878,10 @@ require([
       decors1_sharp_brick_backLayer,
       decors1_up_backLayer,
       decors1_tomb_backLayer,
+      decors_right1Layer,
+      decors1_sharp_brick_rightLayer,
+      decors1_up_rightLayer,
+      decors1_tomb_rightLayer,
       stair1Layer,
       // layer2Layer2,
       layer2Layer2_front,
