@@ -48,6 +48,16 @@ import layer4Layer4_columnsFooterImport from './api/layer4/layer4_columnsFooter/
 import layer4Layer4_columnsFooterBackImport from './api/layer4/layer4_columnsFooter_Back/layer4_columnsFooter_Back.geojson' assert { type: "json" };
 import layer4Layer4_columnsFooterRightImport from './api/layer4/layer4_columnsFooter_Right/layer4_columnsFooter_Right.geojson' assert { type: "json" };
 import layer4Layer4_columnsFooterLeftImport from './api/layer4/layer4_columnsFooter_Left/layer4_columnsFooter_Left.geojson' assert { type: "json" };
+import layer4Windowsill_frontImport from "./api/layer4/window/window_front/windowsill_front.geojson" assert { type: "json" };
+import layer4Windowcolumn_frontImport from "./api/layer4/window/window_front/windowcolumn_front.geojson" assert { type: "json" };
+import layer4Windowcrosscolumn_frontImport from "./api/layer4/window/window_front/windowcrosscolumn_front.geojson" assert { type: "json" };
+import layer4Windowsill_bottom_rightImport from "./api/layer4/window/window_right/windowsill_bottom_right.geojson" assert { type: "json" };
+import layer4Windowsill_middle_rightImport from "./api/layer4/window/window_right/windowsill_middle_right.geojson" assert { type: "json" };
+import layer4Windowsill_top_rightImport from "./api/layer4/window/window_right/windowsill_top_right.geojson" assert { type: "json" };
+import layer4Windowcolumn_rightImport from "./api/layer4/window/window_right/windowcolumn_right.geojson" assert { type: "json" };
+import layer4Windowcrosscolumn_rightImport from "./api/layer4/window/window_right/windowcrosscolumn_right.geojson" assert { type: "json" };
+import layer5Layer5Import from "./api/layer5/layer5.geojson" assert { type: "json" };
+
 
 require([
   "esri/Map",
@@ -866,6 +876,25 @@ require([
       ],
     },
   };
+  //Bệ Cửa sổ mặt trước
+  const layer4Windowsill_front = new GeoJSONLayer({
+    url: "./api/layer4/window/window_front/windowsill_front.geojson",
+  });
+  layer4Windowsill_front.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Windowsill_frontImport.features[0].properties.height,
+          material: {
+            color: layer4Windowsill_frontImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
 
   const layer4Layer4_columnsLeft = new GeoJSONLayer({
     url: "./api/layer4/layer4_columnsLeft/layer4_columnsLeft.geojson",
@@ -880,6 +909,25 @@ require([
           size: layer4Layer4_columnsLeftImport.features[0].properties.height,
           material: {
             color: layer4Layer4_columnsLeftImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+  //Cột chính cửa sổ trước
+  const layer4Windowcolumn_front = new GeoJSONLayer({
+    url: "./api/layer4/window/window_front/windowcolumn_front.geojson",
+  });
+  layer4Windowcolumn_front.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Windowcolumn_frontImport.features[0].properties.height,
+          material: {
+            color: layer4Windowcolumn_frontImport.features[0].properties.color,
           },
         },
       ],
@@ -905,6 +953,28 @@ require([
     },
   };
 
+  //Cột chéo cửa sổ trước
+  const layer4Windowcrosscolumn_front = new GeoJSONLayer({
+    url: "./api/layer4/window/window_front/windowcrosscolumn_front.geojson",
+  });
+  layer4Windowcrosscolumn_front.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Windowcrosscolumn_frontImport.features[0].properties
+            .height,
+          material: {
+            color:
+              layer4Windowcrosscolumn_frontImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
   const layer4Layer4_columnsFooter_Back = new GeoJSONLayer({
     url: "./api/layer4/layer4_columnsFooter_Back/layer4_columnsFooter_Back.geojson",
   });
@@ -918,6 +988,28 @@ require([
           size: layer4Layer4_columnsFooterBackImport.features[0].properties.height,
           material: {
             color: layer4Layer4_columnsFooterBackImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  //Bệ Cửa sổ dưới mặt phải
+  const layer4Windowsill_bottom_right = new GeoJSONLayer({
+    url: "./api/layer4/window/window_right/windowsill_bottom_right.geojson",
+  });
+  layer4Windowsill_bottom_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Windowsill_bottom_rightImport.features[0].properties
+            .height,
+          material: {
+            color:
+              layer4Windowsill_bottom_rightImport.features[0].properties.color,
           },
         },
       ],
@@ -943,6 +1035,28 @@ require([
     },
   };
 
+  //Bệ Cửa sổ giữa mặt phải
+  const layer4Windowsill_middle_right = new GeoJSONLayer({
+    url: "./api/layer4/window/window_right/windowsill_middle_right.geojson",
+  });
+  layer4Windowsill_middle_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Windowsill_middle_rightImport.features[0].properties
+            .height,
+          material: {
+            color:
+              layer4Windowsill_middle_rightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
   const layer4Layer4_columnsFooter_Left = new GeoJSONLayer({
     url: "./api/layer4/layer4_columnsFooter_Left/layer4_columnsFooter_Left.geojson",
   });
@@ -961,6 +1075,90 @@ require([
       ],
     },
   };
+
+  //Bệ Cửa sổ trên mặt phải
+  const layer4Windowsill_top_right = new GeoJSONLayer({
+    url: "./api/layer4/window/window_right/windowsill_top_right.geojson",
+  });
+  layer4Windowsill_top_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Windowsill_top_rightImport.features[0].properties.height,
+          material: {
+            color:
+              layer4Windowsill_top_rightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  //Cột chính cửa sổ phải
+  const layer4Windowcolumn_right = new GeoJSONLayer({
+    url: "./api/layer4/window/window_right/windowcolumn_right.geojson",
+  });
+  layer4Windowcolumn_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Windowcolumn_rightImport.features[0].properties.height,
+          material: {
+            color: layer4Windowcolumn_rightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  //Cột chéo cửa sổ phải
+  const layer4Windowcrosscolumn_right = new GeoJSONLayer({
+    url: "./api/layer4/window/window_right/windowcrosscolumn_right.geojson",
+  });
+  layer4Windowcrosscolumn_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Windowcrosscolumn_rightImport.features[0].properties
+            .height,
+          material: {
+            color:
+              layer4Windowcrosscolumn_rightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  // Nền 5
+  const layer5Layer5 = new GeoJSONLayer({
+    url: "./api/layer5/layer5.geojson",
+  });
+  layer5Layer5.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer5Layer5Import.features[0].properties.height,
+          material: {
+            color: layer5Layer5Import.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
   // Cách tạo cột hình trụ
   // const cylinderLayer = new GraphicsLayer();
   // const point = { // Điểm tâm hình tròn đáy
@@ -1034,8 +1232,18 @@ require([
       layer4Layer4_columnsFooter,
       layer4Layer4_columnsFooter_Back,
       layer4Layer4_columnsFooter_Right,
-      layer4Layer4_columnsFooter_Left
+      layer4Layer4_columnsFooter_Left,
       // cylinderLayer
+      layer4Windowsill_front,
+      layer4Windowcolumn_front,
+      layer4Windowcrosscolumn_front,
+      layer4Windowsill_bottom_right,
+      layer4Windowsill_middle_right,
+      layer4Windowsill_top_right,
+      layer4Windowcolumn_right,
+      layer4Windowcrosscolumn_right,
+      layer5Layer5,
+      //cylinderLayer
     ],
   });
 
