@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "color": "#cdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}
