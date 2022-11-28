@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 1",
+        "height": 5.36,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70329460393484, 10.776661139634038, 17.06],
+            [106.70329460393484, 10.776662308752128, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 1",
+        "height": 5.36,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70329460393484, 10.776675888508374, 17.06],
+            [106.70329460393484, 10.776674719390284, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

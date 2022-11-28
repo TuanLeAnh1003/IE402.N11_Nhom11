@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "Building name": "Layer4 - Cửa",
-        "height": 1.75,
+        "height": 1.76,
         "color": "#cdcdcd",
         "idb": "1"
       },
@@ -26,7 +26,7 @@
           "type": "Feature",
           "properties": {
             "Building name": "Layer4 - Cửa sổ",
-            "height": 1.75,
+            "height": 1.76,
             "color": "#cdcdcd",
             "idb": "1"
           },

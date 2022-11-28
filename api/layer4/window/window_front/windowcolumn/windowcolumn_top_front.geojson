@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 1",
+        "height": 0.12,
+        "width": 0.32,
+        "color": "#C0C0BF",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70298188038063, 10.776624896987807, 21.14],
+            [106.70298682390312, 10.77662489698777, 21.14],
+            [106.70298682390325, 10.776628404342054, 21.14]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 1",
+        "height": 0.12,
+        "width": 0.32,
+        "color": "#C0C0BF",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70301428791758, 10.776628404340157, 21.14],
+            [106.70301428791768, 10.776624896985892, 21.14],
+            [106.7030192314402, 10.776624896985853, 21.14]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 2",
+        "height": 0.12,
+        "width": 0.32,
+        "color": "#C0C0BF",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70324150684836, 10.7766248969798, 21.14],
+            [106.70324645037087, 10.776624896979762, 21.14],
+            [106.70324645037097, 10.776628404334048, 21.14]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 2",
+        "height": 0.12,
+        "width": 0.32,
+        "color": "#C0C0BF",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70327391438532, 10.776628404332149, 21.14],
+            [106.70327391438542, 10.776624896977882, 21.14],
+            [106.70327885790792, 10.776624896977845, 21.14]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}
