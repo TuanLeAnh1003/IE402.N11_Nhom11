@@ -53,6 +53,11 @@ import layer4Layer4_columnsFooter_upFrontImport from './api/layer4/layer4_column
 import layer4Layer4_columnsFooter_upBackImport from './api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upBack.geojson' assert { type: "json" };
 import layer4Layer4_columnsFooter_upLeftImport from './api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upLeft.geojson' assert { type: "json" };
 
+import layer4Layer4_columnsHeader_belowFrontImport from './api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowFront.geojson' assert { type: "json" };
+import layer4Layer4_columnsHeader_belowRightImport from './api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowRight.geojson' assert { type: "json" };
+import layer4Layer4_columnsHeader_belowBackImport from './api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowBack.geojson' assert { type: "json" };
+import layer4Layer4_columnsHeader_belowLeftImport from './api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowLeft.geojson' assert { type: "json" };
+
 import layer4Windowsill_frontImport from "./api/layer4/window/window_front/windowsill_front.geojson" assert { type: "json" };
 import layer4Windowcolumn_frontImport from "./api/layer4/window/window_front/windowcolumn_front.geojson" assert { type: "json" };
 import layer4Windowcrosscolumn_frontImport from "./api/layer4/window/window_front/windowcrosscolumn_front.geojson" assert { type: "json" };
@@ -1139,6 +1144,82 @@ require([
     },
   };
 
+  const layer4Layer4_columnsHeader_belowFront = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowFront.geojson",
+  });
+  layer4Layer4_columnsHeader_belowFront.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsHeader_belowFrontImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsHeader_belowFrontImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_columnsHeader_belowRight = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowRight.geojson",
+  });
+  layer4Layer4_columnsHeader_belowRight.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsHeader_belowRightImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsHeader_belowRightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_columnsHeader_belowBack = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowBack.geojson",
+  });
+  layer4Layer4_columnsHeader_belowBack.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsHeader_belowBackImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsHeader_belowBackImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_columnsHeader_belowLeft = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowLeft.geojson",
+  });
+  layer4Layer4_columnsHeader_belowLeft.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsHeader_belowLeftImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsHeader_belowLeftImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
   //Bệ Cửa sổ trên mặt phải
   const layer4Windowsill_top_right = new GeoJSONLayer({
     url: "./api/layer4/window/window_right/windowsill_top_right.geojson",
@@ -1299,6 +1380,12 @@ require([
       layer4Layer4_columnsFooter_upFront,
       layer4Layer4_columnsFooter_upBack,
       layer4Layer4_columnsFooter_upLeft,
+
+      layer4Layer4_columnsHeader_belowFront,
+      layer4Layer4_columnsHeader_belowRight,
+      layer4Layer4_columnsHeader_belowBack,
+      layer4Layer4_columnsHeader_belowLeft,
+
       // cylinderLayer
       layer4Windowsill_front,
       layer4Windowcolumn_front,
