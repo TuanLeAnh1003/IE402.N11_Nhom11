@@ -44,6 +44,15 @@ import layer4Layer4_backImport from "./api/layer4/layer4_back/layer4_back.geojso
 import layer4Layer4_columnsRightImport from "./api/layer4/layer4_columnsRight/layer4_columnsRight.geojson" assert { type: "json" };
 import layer4Layer4_columnsLeftImport from "./api/layer4/layer4_columnsLeft/layer4_columnsLeft.geojson" assert { type: "json" };
 
+import layer4Layer4_columnsFooter_upFrontImport from './api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upFront.geojson' assert { type: "json" };
+import layer4Layer4_columnsFooter_upBackImport from './api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upBack.geojson' assert { type: "json" };
+import layer4Layer4_columnsFooter_upLeftImport from './api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upLeft.geojson' assert { type: "json" };
+
+import layer4Layer4_columnsHeader_belowFrontImport from './api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowFront.geojson' assert { type: "json" };
+import layer4Layer4_columnsHeader_belowRightImport from './api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowRight.geojson' assert { type: "json" };
+import layer4Layer4_columnsHeader_belowBackImport from './api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowBack.geojson' assert { type: "json" };
+import layer4Layer4_columnsHeader_belowLeftImport from './api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowLeft.geojson' assert { type: "json" };
+
 import layer4Layer4_columnsFooterImport from "./api/layer4/layer4_columnsFooter/layer4_columnsFooter.geojson" assert { type: "json" };
 import layer4Layer4_columnsFooterBackImport from "./api/layer4/layer4_columnsFooter_Back/layer4_columnsFooter_Back.geojson" assert { type: "json" };
 import layer4Layer4_columnsFooterRightImport from "./api/layer4/layer4_columnsFooter_Right/layer4_columnsFooter_Right.geojson" assert { type: "json" };
