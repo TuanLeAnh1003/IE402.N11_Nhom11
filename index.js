@@ -58,6 +58,7 @@ import layer4Windowframe_x_inside_frontImport from "./api/layer4/window/window_f
 import layer4Windowframe_curve_frontImport from "./api/layer4/window/window_front/windowframe_x/windowframe_curve_front.geojson" assert { type: "json" };
 import layer4Windowframe_y_outside_frontImport from "./api/layer4/window/window_front/windowframe_y/windowframe_outside_front.geojson" assert { type: "json" };
 import layer4Windowframe_y_inside_frontImport from "./api/layer4/window/window_front/windowframe_y/windowframe_inside_front.geojson" assert { type: "json" };
+import layer4Windowframe_y_middle_frontImport from "./api/layer4/window/window_front/windowframe_y/windowframe_middle_front.geojson" assert { type: "json" };
 //Window right
 import layer4Windowsill_bottom_rightImport from "./api/layer4/window/window_right/windowsill/windowsill_bottom_right.geojson" assert { type: "json" };
 import layer4Windowsill_middle_rightImport from "./api/layer4/window/window_right/windowsill/windowsill_middle_right.geojson" assert { type: "json" };
@@ -69,6 +70,7 @@ import layer4Windowframe_x_inside_rightImport from "./api/layer4/window/window_r
 import layer4Windowframe_curve_rightImport from "./api/layer4/window/window_right/windowframe_x/windowframe_curve_right.geojson" assert { type: "json" };
 import layer4Windowframe_y_outside_rightImport from "./api/layer4/window/window_right/windowframe_y/windowframe_outside_right.geojson" assert { type: "json" };
 import layer4Windowframe_y_inside_rightImport from "./api/layer4/window/window_right/windowframe_y/windowframe_inside_right.geojson" assert { type: "json" };
+import layer4Windowframe_y_middle_rightImport from "./api/layer4/window/window_right/windowframe_y/windowframe_middle_right.geojson" assert { type: "json" };
 //Window left
 import layer4Windowcrosscolumn_rightImport from "./api/layer4/window/window_right/windowcolumn/windowcrosscolumn_right.geojson" assert { type: "json" };
 import layer4Windowsill_bottom_leftImport from "./api/layer4/window/window_left/windowsill/windowsill_bottom_left.geojson" assert { type: "json" };
@@ -82,6 +84,7 @@ import layer4Windowframe_x_inside_leftImport from "./api/layer4/window/window_le
 import layer4Windowframe_curve_leftImport from "./api/layer4/window/window_left/windowframe_x/windowframe_curve_left.geojson" assert { type: "json" };
 import layer4Windowframe_y_outside_leftImport from "./api/layer4/window/window_left/windowframe_y/windowframe_outside_left.geojson" assert { type: "json" };
 import layer4Windowframe_y_inside_leftImport from "./api/layer4/window/window_left/windowframe_y/windowframe_inside_left.geojson" assert { type: "json" };
+import layer4Windowframe_y_middle_leftImport from "./api/layer4/window/window_left/windowframe_y/windowframe_middle_left.geojson" assert { type: "json" };
 //Window back
 import layer4Windowsill_bottom_backImport from "./api/layer4/window/window_back/windowsill/windowsill_bottom_back.geojson" assert { type: "json" };
 import layer4Windowsill_middle_backImport from "./api/layer4/window/window_back/windowsill/windowsill_middle_back.geojson" assert { type: "json" };
@@ -1128,7 +1131,7 @@ require([
             layer4Windowframe_curve_frontImport.features[0].properties.height,
           join: "bevel",
           cap: "butt",
-          profileRotation: "heading",
+          profileRotation: "all",
           anchor: "top",
         },
       ],
@@ -1188,6 +1191,37 @@ require([
             layer4Windowframe_y_inside_frontImport.features[0].properties.width,
           height:
             layer4Windowframe_y_inside_frontImport.features[0].properties
+              .height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
+  //Khung cửa sổ viền giữa chiều dọc mặt trước
+  const layer4Windowframe_y_middle_front = new GeoJSONLayer({
+    url: "./api/layer4/window/window_front/windowframe_y/windowframe_middle_front.geojson",
+  });
+  layer4Windowframe_y_middle_front.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color:
+              layer4Windowframe_y_middle_frontImport.features[0].properties
+                .color,
+          },
+          width:
+            layer4Windowframe_y_middle_frontImport.features[0].properties.width,
+          height:
+            layer4Windowframe_y_middle_frontImport.features[0].properties
               .height,
           join: "bevel",
           cap: "butt",
@@ -1416,7 +1450,8 @@ require([
                 .color,
           },
           width:
-            layer4Windowframe_x_outside_rightImport.features[0].properties.width,
+            layer4Windowframe_x_outside_rightImport.features[0].properties
+              .width,
           height:
             layer4Windowframe_x_outside_rightImport.features[0].properties
               .height,
@@ -1449,7 +1484,8 @@ require([
           width:
             layer4Windowframe_x_inside_rightImport.features[0].properties.width,
           height:
-            layer4Windowframe_x_inside_rightImport.features[0].properties.height,
+            layer4Windowframe_x_inside_rightImport.features[0].properties
+              .height,
           join: "bevel",
           cap: "butt",
           profileRotation: "heading",
@@ -1481,7 +1517,7 @@ require([
             layer4Windowframe_curve_rightImport.features[0].properties.height,
           join: "bevel",
           cap: "butt",
-          profileRotation: "heading",
+          profileRotation: "all",
           anchor: "top",
         },
       ],
@@ -1506,7 +1542,8 @@ require([
                 .color,
           },
           width:
-            layer4Windowframe_y_outside_rightImport.features[0].properties.width,
+            layer4Windowframe_y_outside_rightImport.features[0].properties
+              .width,
           height:
             layer4Windowframe_y_outside_rightImport.features[0].properties
               .height,
@@ -1539,7 +1576,39 @@ require([
           width:
             layer4Windowframe_y_inside_rightImport.features[0].properties.width,
           height:
-            layer4Windowframe_y_inside_rightImport.features[0].properties.height,
+            layer4Windowframe_y_inside_rightImport.features[0].properties
+              .height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
+  //Khung cửa sổ viền giữa chiều dọc mặt phải
+  const layer4Windowframe_y_middle_right = new GeoJSONLayer({
+    url: "./api/layer4/window/window_right/windowframe_y/windowframe_middle_right.geojson",
+  });
+  layer4Windowframe_y_middle_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color:
+              layer4Windowframe_y_middle_rightImport.features[0].properties
+                .color,
+          },
+          width:
+            layer4Windowframe_y_middle_rightImport.features[0].properties.width,
+          height:
+            layer4Windowframe_y_middle_rightImport.features[0].properties
+              .height,
           join: "bevel",
           cap: "butt",
           profileRotation: "heading",
@@ -1766,7 +1835,7 @@ require([
             layer4Windowframe_curve_leftImport.features[0].properties.height,
           join: "bevel",
           cap: "butt",
-          profileRotation: "heading",
+          profileRotation: "all",
           anchor: "top",
         },
       ],
@@ -1825,6 +1894,37 @@ require([
             layer4Windowframe_y_inside_leftImport.features[0].properties.width,
           height:
             layer4Windowframe_y_inside_leftImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
+  //Khung cửa sổ viền giữa chiều dọc mặt trái
+  const layer4Windowframe_y_middle_left = new GeoJSONLayer({
+    url: "./api/layer4/window/window_left/windowframe_y/windowframe_middle_left.geojson",
+  });
+  layer4Windowframe_y_middle_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color:
+              layer4Windowframe_y_middle_leftImport.features[0].properties
+                .color,
+          },
+          width:
+            layer4Windowframe_y_middle_leftImport.features[0].properties.width,
+          height:
+            layer4Windowframe_y_middle_leftImport.features[0].properties
+              .height,
           join: "bevel",
           cap: "butt",
           profileRotation: "heading",
@@ -2003,7 +2103,7 @@ require([
             layer4Windowframe_curve_backImport.features[0].properties.height,
           join: "bevel",
           cap: "butt",
-          profileRotation: "heading",
+          profileRotation: "all",
           anchor: "top",
         },
       ],
@@ -2243,6 +2343,7 @@ require([
       layer4Windowframe_curve_front,
       layer4Windowframe_y_outside_front,
       layer4Windowframe_y_inside_front,
+      layer4Windowframe_y_middle_front,
       layer4Windowsill_bottom_right,
       layer4Windowsill_middle_right,
       layer4Windowsill_top_right,
@@ -2254,6 +2355,7 @@ require([
       layer4Windowframe_curve_right,
       layer4Windowframe_y_outside_right,
       layer4Windowframe_y_inside_right,
+      layer4Windowframe_y_middle_right,
       layer4Windowsill_bottom_left,
       layer4Windowsill_middle_left,
       layer4Windowsill_top_left,
@@ -2265,6 +2367,7 @@ require([
       layer4Windowframe_curve_left,
       layer4Windowframe_y_outside_left,
       layer4Windowframe_y_inside_left,
+      layer4Windowframe_y_middle_left,
       layer4Windowsill_bottom_back,
       layer4Windowsill_middle_back,
       layer4Windowsill_top_back,
