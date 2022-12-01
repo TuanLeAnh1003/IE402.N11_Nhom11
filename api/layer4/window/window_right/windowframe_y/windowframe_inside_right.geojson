@@ -20,6 +20,47 @@
         ]
       },
       "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 1",
+        "height": 5.53,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+          [106.70326109783286,10.77673929067979, 17.06],
+          [106.70326109783277,10.776740459797882, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 1",
+        "height": 5.53,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70326109783286,10.776794868755035,17.06],
+            [106.70326109783277,10.776796037873126,17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
     }
   ]
 }
