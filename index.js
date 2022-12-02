@@ -62,6 +62,12 @@ import layer4Layer4_columnsFooterImport from "./api/layer4/layer4_columnsFooter/
 import layer4Layer4_columnsFooterBackImport from "./api/layer4/layer4_columnsFooter_Back/layer4_columnsFooter_Back.geojson" assert { type: "json" };
 import layer4Layer4_columnsFooterRightImport from "./api/layer4/layer4_columnsFooter_Right/layer4_columnsFooter_Right.geojson" assert { type: "json" };
 import layer4Layer4_columnsFooterLeftImport from "./api/layer4/layer4_columnsFooter_Left/layer4_columnsFooter_Left.geojson" assert { type: "json" };
+
+import layer4_upperRimFrontImport from "./api/layer4/upperRim/upperRim_front.geojson" assert { type: "json" };
+import layer4_upperRimRightImport from "./api/layer4/upperRim/upperRim_right.geojson" assert { type: "json" }; 
+import layer4_upperRimBackImport from "./api/layer4/upperRim/upperRim_back.geojson" assert { type: "json" }; 
+import layer4_upperRimLeftImport from "./api/layer4/upperRim/upperRim_left.geojson" assert { type: "json" }; 
+
 //Window front
 import layer4Windowsill_frontImport from "./api/layer4/window/window_front/windowsill/windowsill_front.geojson" assert { type: "json" };
 import layer4Windowcolumn_frontImport from "./api/layer4/window/window_front/windowcolumn/windowcolumn_front.geojson" assert { type: "json" };
@@ -1563,8 +1569,83 @@ require([
       ],
     },
   };
-  
 
+  const layer4_upperRimFront = new GeoJSONLayer({
+    url: "./api/layer4/upperRim/upperRim_front.geojson",
+  });
+  layer4_upperRimFront.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4_upperRimFrontImport.features[0].properties.height,
+          material: {
+            color: layer4_upperRimFrontImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4_upperRimRight = new GeoJSONLayer({
+    url: "./api/layer4/upperRim/upperRim_right.geojson",
+  });
+  layer4_upperRimRight.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4_upperRimRightImport.features[0].properties.height,
+          material: {
+            color: layer4_upperRimRightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4_upperRimBack = new GeoJSONLayer({
+    url: "./api/layer4/upperRim/upperRim_back.geojson",
+  });
+  layer4_upperRimBack.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4_upperRimBackImport.features[0].properties.height,
+          material: {
+            color: layer4_upperRimBackImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4_upperRimLeft = new GeoJSONLayer({
+    url: "./api/layer4/upperRim/upperRim_left.geojson",
+  });
+  layer4_upperRimLeft.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4_upperRimLeftImport.features[0].properties.height,
+          material: {
+            color: layer4_upperRimLeftImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+  
   //Bệ Cửa sổ trên mặt phải
   const layer4Windowsill_top_right = new GeoJSONLayer({
     url: "./api/layer4/window/window_right/windowsill/windowsill_top_right.geojson",
@@ -2571,6 +2652,11 @@ require([
       layer4Layer4_columnsHeader_aboveRight,
       layer4Layer4_columnsHeader_aboveBack,
       layer4Layer4_columnsHeader_aboveLeft,
+
+      layer4_upperRimFront,
+      layer4_upperRimRight,
+      layer4_upperRimBack,
+      layer4_upperRimLeft,
 
       // cylinderLayer
       layer4Windowsill_front,
