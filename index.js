@@ -48,6 +48,15 @@ import layer4Layer4_columnsFooterImport from "./api/layer4/layer4_columnsFooter/
 import layer4Layer4_columnsFooterBackImport from "./api/layer4/layer4_columnsFooter_Back/layer4_columnsFooter_Back.geojson" assert { type: "json" };
 import layer4Layer4_columnsFooterRightImport from "./api/layer4/layer4_columnsFooter_Right/layer4_columnsFooter_Right.geojson" assert { type: "json" };
 import layer4Layer4_columnsFooterLeftImport from "./api/layer4/layer4_columnsFooter_Left/layer4_columnsFooter_Left.geojson" assert { type: "json" };
+
+//Columns footer_up
+
+import layer4Layer4_columnsFooter_upBackImport from "./api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upBack.geojson" assert { type: "json" };
+import layer4Layer4_columnsFooter_upLeftImport from "./api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upLeft.geojson" assert { type: "json" };
+import layer4Layer4_columnsFooter_upFrontImport from "./api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upFront.geojson" assert { type: "json" };
+import layer4Layer4_columnsFooter_upRightImport from "./api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upRight.geojson" assert { type: "json" };
+
+
 //Window front
 import layer4Windowsill_frontImport from "./api/layer4/window/window_front/windowsill/windowsill_front.geojson" assert { type: "json" };
 import layer4Windowcolumn_frontImport from "./api/layer4/window/window_front/windowcolumn/windowcolumn_front.geojson" assert { type: "json" };
@@ -1359,6 +1368,25 @@ require([
     },
   };
 
+  const layer4Layer4_columnsFooter_upRight = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upRight.geojson",
+  });
+  layer4Layer4_columnsFooter_upRight.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsFooter_upRightImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsFooter_upRightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
   const layer4Layer4_columnsFooter_upBack = new GeoJSONLayer({
     url: "./api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upBack.geojson",
   });
@@ -2393,6 +2421,8 @@ require([
       layer4Layer4_columnsFooter_upFront,
       layer4Layer4_columnsFooter_upBack,
       layer4Layer4_columnsFooter_upLeft,
+      layer4Layer4_columnsFooter_upRight,
+
       // cylinderLayer
       layer4Windowsill_front,
       layer4Windowcolumn_front,
