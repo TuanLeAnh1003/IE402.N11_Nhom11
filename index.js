@@ -63,10 +63,10 @@ import layer4Layer4_columnsFooterBackImport from "./api/layer4/layer4_columnsFoo
 import layer4Layer4_columnsFooterRightImport from "./api/layer4/layer4_columnsFooter_Right/layer4_columnsFooter_Right.geojson" assert { type: "json" };
 import layer4Layer4_columnsFooterLeftImport from "./api/layer4/layer4_columnsFooter_Left/layer4_columnsFooter_Left.geojson" assert { type: "json" };
 
-import layer4_upperRimFrontImport from "./api/layer4/upperRim/upperRim_front.geojson" assert { type: "json" };
-import layer4_upperRimRightImport from "./api/layer4/upperRim/upperRim_right.geojson" assert { type: "json" }; 
-import layer4_upperRimBackImport from "./api/layer4/upperRim/upperRim_back.geojson" assert { type: "json" }; 
-import layer4_upperRimLeftImport from "./api/layer4/upperRim/upperRim_left.geojson" assert { type: "json" }; 
+import layer4_upperRimFrontImport from "./api/layer4/layer4_upper/upperRim/upperRim_front.geojson" assert { type: "json" };
+import layer4_upperRimRightImport from "./api/layer4/layer4_upper/upperRim/upperRim_right.geojson" assert { type: "json" }; 
+import layer4_upperRimBackImport from "./api/layer4/layer4_upper/upperRim/upperRim_back.geojson" assert { type: "json" }; 
+import layer4_upperRimLeftImport from "./api/layer4/layer4_upper/upperRim/upperRim_left.geojson" assert { type: "json" }; 
 
 //Window front
 import layer4Windowsill_frontImport from "./api/layer4/window/window_front/windowsill/windowsill_front.geojson" assert { type: "json" };
@@ -1571,7 +1571,7 @@ require([
   };
 
   const layer4_upperRimFront = new GeoJSONLayer({
-    url: "./api/layer4/upperRim/upperRim_front.geojson",
+    url: "./api/layer4/layer4_upper/upperRim/upperRim_front.geojson",
   });
   layer4_upperRimFront.renderer = {
     type: "simple",
@@ -1590,7 +1590,7 @@ require([
   };
 
   const layer4_upperRimRight = new GeoJSONLayer({
-    url: "./api/layer4/upperRim/upperRim_right.geojson",
+    url: "./api/layer4/layer4_upper/upperRim/upperRim_right.geojson",
   });
   layer4_upperRimRight.renderer = {
     type: "simple",
@@ -1609,7 +1609,7 @@ require([
   };
 
   const layer4_upperRimBack = new GeoJSONLayer({
-    url: "./api/layer4/upperRim/upperRim_back.geojson",
+    url: "./api/layer4/layer4_upper/upperRim/upperRim_back.geojson",
   });
   layer4_upperRimBack.renderer = {
     type: "simple",
@@ -1628,7 +1628,7 @@ require([
   };
 
   const layer4_upperRimLeft = new GeoJSONLayer({
-    url: "./api/layer4/upperRim/upperRim_left.geojson",
+    url: "./api/layer4/layer4_upper/upperRim/upperRim_left.geojson",
   });
   layer4_upperRimLeft.renderer = {
     type: "simple",
