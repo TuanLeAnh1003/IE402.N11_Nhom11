@@ -1,0 +1,26 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Gương cửa sổ phía trên layer4",
+          "height": 1.13,
+          "color": "#aaaaaa",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+                [106.70327034400465,10.777370254718182, 23.66],
+                [106.70327034400404,10.777387161964374, 23.66],
+                [106.7032702524571,10.777387161964374, 23.66],
+                [106.7032702524571,10.77737007485386, 23.66]
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+    ]
+  }
