@@ -44,10 +44,33 @@ import layer4Layer4_backImport from "./api/layer4/layer4_back/layer4_back.geojso
 import layer4Layer4_columnsRightImport from "./api/layer4/layer4_columnsRight/layer4_columnsRight.geojson" assert { type: "json" };
 import layer4Layer4_columnsLeftImport from "./api/layer4/layer4_columnsLeft/layer4_columnsLeft.geojson" assert { type: "json" };
 
+import layer4Layer4_columnsHeader_belowFrontImport from './api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowFront.geojson' assert { type: "json" };
+import layer4Layer4_columnsHeader_belowRightImport from './api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowRight.geojson' assert { type: "json" };
+import layer4Layer4_columnsHeader_belowBackImport from './api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowBack.geojson' assert { type: "json" };
+import layer4Layer4_columnsHeader_belowLeftImport from './api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowLeft.geojson' assert { type: "json" };
+
+import layer4Layer4_columnsHeader_aboveFrontImport from './api/layer4/layer4_columnsHeader_above/layer4_columnsHeader_aboveFront.geojson' assert { type: "json" };
+import layer4Layer4_columnsHeader_aboveRightImport from './api/layer4/layer4_columnsHeader_above/layer4_columnsHeader_aboveRight.geojson' assert { type: "json" };
+import layer4Layer4_columnsHeader_aboveBackImport from './api/layer4/layer4_columnsHeader_above/layer4_columnsHeader_aboveBack.geojson' assert { type: "json" };
+import layer4Layer4_columnsHeader_aboveLeftImport from './api/layer4/layer4_columnsHeader_above/layer4_columnsHeader_aboveLeft.geojson' assert { type: "json" };
+
 import layer4Layer4_columnsFooterImport from "./api/layer4/layer4_columnsFooter/layer4_columnsFooter.geojson" assert { type: "json" };
 import layer4Layer4_columnsFooterBackImport from "./api/layer4/layer4_columnsFooter_Back/layer4_columnsFooter_Back.geojson" assert { type: "json" };
 import layer4Layer4_columnsFooterRightImport from "./api/layer4/layer4_columnsFooter_Right/layer4_columnsFooter_Right.geojson" assert { type: "json" };
 import layer4Layer4_columnsFooterLeftImport from "./api/layer4/layer4_columnsFooter_Left/layer4_columnsFooter_Left.geojson" assert { type: "json" };
+
+import layer4_upperRimFrontImport from "./api/layer4/layer4_upper/upperRim/upperRim_front.geojson" assert { type: "json" };
+import layer4_upperRimRightImport from "./api/layer4/layer4_upper/upperRim/upperRim_right.geojson" assert { type: "json" }; 
+import layer4_upperRimBackImport from "./api/layer4/layer4_upper/upperRim/upperRim_back.geojson" assert { type: "json" }; 
+import layer4_upperRimLeftImport from "./api/layer4/layer4_upper/upperRim/upperRim_left.geojson" assert { type: "json" }; 
+
+//Columns footer_up
+
+import layer4Layer4_columnsFooter_upBackImport from "./api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upBack.geojson" assert { type: "json" };
+import layer4Layer4_columnsFooter_upLeftImport from "./api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upLeft.geojson" assert { type: "json" };
+import layer4Layer4_columnsFooter_upFrontImport from "./api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upFront.geojson" assert { type: "json" };
+import layer4Layer4_columnsFooter_upRightImport from "./api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upRight.geojson" assert { type: "json" };
+
 //Window front
 import layer4Windowsill_frontImport from "./api/layer4/window/window_front/windowsill/windowsill_front.geojson" assert { type: "json" };
 import layer4Windowcolumn_frontImport from "./api/layer4/window/window_front/windowcolumn/windowcolumn_front.geojson" assert { type: "json" };
@@ -96,6 +119,22 @@ import layer4Windowframe_curve_backImport from "./api/layer4/window/window_back/
 import layer4Windowframe_y_outside_backImport from "./api/layer4/window/window_back/windowframe_y/windowframe_outside_back.geojson" assert { type: "json" };
 import layer4Windowframe_y_inside_backImport from "./api/layer4/window/window_back/windowframe_y/windowframe_inside_back.geojson" assert { type: "json" };
 import layer4Balconybase_backImport from "./api/layer4/balcony/balcony_back/balconybase_back.geojson" assert { type: "json" };
+
+import layer4UpperWindowBorder_leftRight_rightImport from "./api/layer4/layer4_upper/upperWindow/upperWindow_right/windowBorder_leftRight_right.geojson" assert { type: "json" };
+import layer4UpperWindowBorder_top_rightImport from "./api/layer4/layer4_upper/upperWindow/upperWindow_right/windowBorder_top_right.geojson" assert { type: "json" };
+import layer4UpperWindowBorder_bottom_rightImport from "./api/layer4/layer4_upper/upperWindow/upperWindow_right/windowBorder_bottom_right.geojson" assert { type: "json" };
+import layer4UpperWindowMirror_rightImport from "./api/layer4/layer4_upper/upperWindow/upperWindow_right/windowMirror_right.geojson" assert { type: "json" };
+
+import layer4UpperWindowBorder_leftRight_leftImport from "./api/layer4/layer4_upper/upperWindow/upperWindow_left/windowBorder_leftRight_left.geojson" assert { type: "json" };
+import layer4UpperWindowBorder_top_leftImport from "./api/layer4/layer4_upper/upperWindow/upperWindow_left/windowBorder_top_left.geojson" assert { type: "json" };
+import layer4UpperWindowBorder_bottom_leftImport from "./api/layer4/layer4_upper/upperWindow/upperWindow_left/windowBorder_bottom_left.geojson" assert { type: "json" };
+import layer4UpperWindowMirror_leftImport from "./api/layer4/layer4_upper/upperWindow/upperWindow_left/windowMirror_left.geojson" assert { type: "json" };
+
+import layer4UpperWindowBorder_leftRight_backImport from "./api/layer4/layer4_upper/upperWindow/upperWindow_back/windowBorder_leftRight_back.geojson" assert { type: "json" };
+import layer4UpperWindowBorder_top_backImport from "./api/layer4/layer4_upper/upperWindow/upperWindow_back/windowBorder_top_back.geojson" assert { type: "json" };
+import layer4UpperWindowBorder_bottom_backImport from "./api/layer4/layer4_upper/upperWindow/upperWindow_back/windowBorder_bottom_back.geojson" assert { type: "json" };
+import layer4UpperWindowMirror_backImport from "./api/layer4/layer4_upper/upperWindow/upperWindow_back/windowMirror_back.geojson" assert { type: "json" };
+
 import layer5Layer5Import from "./api/layer5/layer5.geojson" assert { type: "json" };
 
 require([
@@ -1340,6 +1379,310 @@ require([
     },
   };
 
+  const layer4Layer4_columnsFooter_upFront = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upFront.geojson",
+  });
+  layer4Layer4_columnsFooter_upFront.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsFooter_upFrontImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsFooter_upFrontImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_columnsFooter_upRight = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upRight.geojson",
+  });
+  layer4Layer4_columnsFooter_upRight.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsFooter_upRightImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsFooter_upRightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_columnsFooter_upBack = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upBack.geojson",
+  });
+  layer4Layer4_columnsFooter_upBack.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsFooter_upBackImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsFooter_upBackImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_columnsFooter_upLeft = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsFooter_up/layer4_columnsFooter_upLeft.geojson",
+  });
+  layer4Layer4_columnsFooter_upLeft.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsFooter_upLeftImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsFooter_upLeftImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_columnsHeader_belowFront = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowFront.geojson",
+  });
+  layer4Layer4_columnsHeader_belowFront.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsHeader_belowFrontImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsHeader_belowFrontImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_columnsHeader_belowRight = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowRight.geojson",
+  });
+  layer4Layer4_columnsHeader_belowRight.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsHeader_belowRightImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsHeader_belowRightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_columnsHeader_belowBack = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowBack.geojson",
+  });
+  layer4Layer4_columnsHeader_belowBack.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsHeader_belowBackImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsHeader_belowBackImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_columnsHeader_belowLeft = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsHeader_below/layer4_columnsHeader_belowLeft.geojson",
+  });
+  layer4Layer4_columnsHeader_belowLeft.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsHeader_belowLeftImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsHeader_belowLeftImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+    const layer4Layer4_columnsHeader_aboveFront = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsHeader_above/layer4_columnsHeader_aboveFront.geojson",
+  });
+  layer4Layer4_columnsHeader_aboveFront.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsHeader_aboveFrontImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsHeader_aboveFrontImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_columnsHeader_aboveRight = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsHeader_above/layer4_columnsHeader_aboveRight.geojson",
+  });
+  layer4Layer4_columnsHeader_aboveRight.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsHeader_aboveRightImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsHeader_aboveRightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_columnsHeader_aboveBack = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsHeader_above/layer4_columnsHeader_aboveBack.geojson",
+  });
+  layer4Layer4_columnsHeader_aboveBack.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsHeader_aboveBackImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsHeader_aboveBackImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Layer4_columnsHeader_aboveLeft = new GeoJSONLayer({
+    url: "./api/layer4/layer4_columnsHeader_above/layer4_columnsHeader_aboveLeft.geojson",
+  });
+  layer4Layer4_columnsHeader_aboveLeft.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Layer4_columnsHeader_aboveLeftImport.features[0].properties.height,
+          material: {
+            color: layer4Layer4_columnsHeader_aboveLeftImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4_upperRimFront = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperRim/upperRim_front.geojson",
+  });
+  layer4_upperRimFront.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4_upperRimFrontImport.features[0].properties.height,
+          material: {
+            color: layer4_upperRimFrontImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4_upperRimRight = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperRim/upperRim_right.geojson",
+  });
+  layer4_upperRimRight.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4_upperRimRightImport.features[0].properties.height,
+          material: {
+            color: layer4_upperRimRightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4_upperRimBack = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperRim/upperRim_back.geojson",
+  });
+  layer4_upperRimBack.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4_upperRimBackImport.features[0].properties.height,
+          material: {
+            color: layer4_upperRimBackImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4_upperRimLeft = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperRim/upperRim_left.geojson",
+  });
+  layer4_upperRimLeft.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4_upperRimLeftImport.features[0].properties.height,
+          material: {
+            color: layer4_upperRimLeftImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+  
   //Bệ Cửa sổ trên mặt phải
   const layer4Windowsill_top_right = new GeoJSONLayer({
     url: "./api/layer4/window/window_right/windowsill/windowsill_top_right.geojson",
@@ -2191,6 +2534,233 @@ require([
     },
   };
 
+  const layer4UpperWindowBorder_leftRight_right = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperWindow/upperWindow_right/windowBorder_leftRight_right.geojson",
+  });
+  layer4UpperWindowBorder_leftRight_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4UpperWindowBorder_leftRight_rightImport.features[0].properties.height,
+          material: {
+            color: layer4UpperWindowBorder_leftRight_rightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4UpperWindowBorder_top_right = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperWindow/upperWindow_right/windowBorder_top_right.geojson",
+  });
+  layer4UpperWindowBorder_top_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4UpperWindowBorder_top_rightImport.features[0].properties.height,
+          material: {
+            color: layer4UpperWindowBorder_top_rightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4UpperWindowBorder_bottom_right = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperWindow/upperWindow_right/windowBorder_bottom_right.geojson",
+  });
+  layer4UpperWindowBorder_bottom_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4UpperWindowBorder_bottom_rightImport.features[0].properties.height,
+          material: {
+            color: layer4UpperWindowBorder_bottom_rightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4UpperWindowMirror_right = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperWindow/upperWindow_right/windowMirror_right.geojson",
+  });
+  layer4UpperWindowMirror_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4UpperWindowMirror_rightImport.features[0].properties.height,
+          material: {
+            color: layer4UpperWindowMirror_rightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4UpperWindowBorder_leftRight_left = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperWindow/upperWindow_left/windowBorder_leftRight_left.geojson",
+  });
+  layer4UpperWindowBorder_leftRight_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4UpperWindowBorder_leftRight_leftImport.features[0].properties.height,
+          material: {
+            color: layer4UpperWindowBorder_leftRight_leftImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4UpperWindowBorder_top_left = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperWindow/upperWindow_left/windowBorder_top_left.geojson",
+  });
+  layer4UpperWindowBorder_top_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4UpperWindowBorder_top_leftImport.features[0].properties.height,
+          material: {
+            color: layer4UpperWindowBorder_top_leftImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4UpperWindowBorder_bottom_left = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperWindow/upperWindow_left/windowBorder_bottom_left.geojson",
+  });
+  layer4UpperWindowBorder_bottom_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4UpperWindowBorder_bottom_leftImport.features[0].properties.height,
+          material: {
+            color: layer4UpperWindowBorder_bottom_leftImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4UpperWindowMirror_left = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperWindow/upperWindow_left/windowMirror_left.geojson",
+  });
+  layer4UpperWindowMirror_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4UpperWindowMirror_leftImport.features[0].properties.height,
+          material: {
+            color: layer4UpperWindowMirror_leftImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4UpperWindowBorder_leftRight_back = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperWindow/upperWindow_back/windowBorder_leftRight_back.geojson",
+  });
+  layer4UpperWindowBorder_leftRight_back.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4UpperWindowBorder_leftRight_backImport.features[0].properties.height,
+          material: {
+            color: layer4UpperWindowBorder_leftRight_backImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4UpperWindowBorder_top_back = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperWindow/upperWindow_back/windowBorder_top_back.geojson",
+  });
+  layer4UpperWindowBorder_top_back.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4UpperWindowBorder_top_backImport.features[0].properties.height,
+          material: {
+            color: layer4UpperWindowBorder_top_backImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4UpperWindowBorder_bottom_back = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperWindow/upperWindow_back/windowBorder_bottom_back.geojson",
+  });
+  layer4UpperWindowBorder_bottom_back.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4UpperWindowBorder_bottom_backImport.features[0].properties.height,
+          material: {
+            color: layer4UpperWindowBorder_bottom_backImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4UpperWindowMirror_back = new GeoJSONLayer({
+    url: "./api/layer4/layer4_upper/upperWindow/upperWindow_back/windowMirror_back.geojson",
+  });
+  layer4UpperWindowMirror_back.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4UpperWindowMirror_backImport.features[0].properties.height,
+          material: {
+            color: layer4UpperWindowMirror_backImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
   // Nền 5
   // const layer5Layer5 = new GeoJSONLayer({
   //   url: "./api/layer5/layer5.geojson",
@@ -2333,6 +2903,26 @@ require([
       layer4Layer4_columnsFooter_Back,
       layer4Layer4_columnsFooter_Right,
       layer4Layer4_columnsFooter_Left,
+      layer4Layer4_columnsFooter_upFront,
+      layer4Layer4_columnsFooter_upBack,
+      layer4Layer4_columnsFooter_upLeft,
+      layer4Layer4_columnsFooter_upRight,
+
+      layer4Layer4_columnsHeader_belowFront,
+      layer4Layer4_columnsHeader_belowRight,
+      layer4Layer4_columnsHeader_belowBack,
+      layer4Layer4_columnsHeader_belowLeft,
+
+      layer4Layer4_columnsHeader_aboveFront,
+      layer4Layer4_columnsHeader_aboveRight,
+      layer4Layer4_columnsHeader_aboveBack,
+      layer4Layer4_columnsHeader_aboveLeft,
+
+      layer4_upperRimFront,
+      layer4_upperRimRight,
+      layer4_upperRimBack,
+      layer4_upperRimLeft,
+
       // cylinderLayer
       layer4Windowsill_front,
       layer4Windowcolumn_front,
@@ -2377,6 +2967,22 @@ require([
       layer4Windowframe_curve_back,
       layer4Windowframe_y_outside_back,
       layer4Windowframe_y_inside_back,
+
+      layer4UpperWindowBorder_leftRight_right,
+      layer4UpperWindowBorder_top_right,
+      layer4UpperWindowBorder_bottom_right,
+      layer4UpperWindowMirror_right,
+
+      layer4UpperWindowBorder_leftRight_left,
+      layer4UpperWindowBorder_top_left,
+      layer4UpperWindowBorder_bottom_left,
+      layer4UpperWindowMirror_left,
+
+      layer4UpperWindowBorder_leftRight_back,
+      layer4UpperWindowBorder_top_back,
+      layer4UpperWindowBorder_bottom_back,
+      layer4UpperWindowMirror_back,
+
       //layer4Balconybase_back,
       layer5Layer5,
       //cylinderLayer
