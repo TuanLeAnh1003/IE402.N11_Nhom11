@@ -20,6 +20,237 @@
         ]
       },
       "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 2",
+        "height": 0.06,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70326109783429,10.776726430380828, 17.06],
+            [106.70326109783134,10.776753410029002, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
     }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 3",
+        "height": 0.06,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+          [106.70326109783429,10.776782008456072,17.06],
+          [106.70326109783134,10.776808988104246,17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 4",
+        "height": 0.06,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70326109783429,10.776837586531318,17.06],
+            [106.70326109783134,10.77686456617949,17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 5",
+        "height": 0.06,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70326109783429,10.776893164606564,17.06],
+            [106.70326109783134,10.776920144254737,17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 6",
+        "height": 0.06,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+          [106.70326109783429,10.776948742681808,17.06],
+          [106.70326109783134,10.776975722329981,17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 7",
+        "height": 0.06,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70326109783429,10.777078065128741,17.06],
+            [106.70326109783134,10.777105044776912,17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 8",
+        "height": 0.06,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70326109783429,10.777133643203987,17.06],
+          [106.70326109783134,10.777160622852158,17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 9",
+        "height": 0.06,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+          [106.70326109783429,10.777189221279231,17.06],
+          [106.70326109783134,10.7772162009274,17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 10",
+        "height": 0.06,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70326109783429,10.777244799354477,17.06],
+            [106.70326109783134,10.777271779002644,17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 11",
+        "height": 0.06,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70326109783429,10.777300377429723,17.06],
+            [106.70326109783134,10.77732735707789,17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 12",
+        "height": 0.06,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032683300409,10.777365038653103,17.06],
+            [106.70326833003867,10.777392018301272,17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    
   ]
 }
