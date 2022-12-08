@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Arch gateway",
+        "height": 0.36,
+        "width": 0.3,
+        "color": "#BABABA",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70311782724411, 10.77662489698835, 24.72],
+            [106.70314574899179, 10.776624896982376, 24.72]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

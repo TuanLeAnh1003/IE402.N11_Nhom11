@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Gate",
+        "height": 0,
+        "color": [186, 186, 186, 0.4],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106.70313192543807, 10.77662489698803, 25.76],
+            [106.7031155385763, 10.776624896988341, 25.08],
+            [106.7031480376596, 10.77662489698237, 25.08]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}
