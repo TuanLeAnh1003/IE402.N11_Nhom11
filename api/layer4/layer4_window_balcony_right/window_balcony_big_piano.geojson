@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ 1",
+        "height": 0.97,
+        "width": 0.20,
+        "color": "#CBC5BC",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70326919973452,10.777392288097749, 18.75],
+            [106.70326919973452,10.77736530844957, 18.75]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}
