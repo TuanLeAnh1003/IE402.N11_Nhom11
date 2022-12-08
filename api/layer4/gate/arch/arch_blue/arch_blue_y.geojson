@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Arch gateway",
+        "height": 1.07,
+        "width": 0.02,
+        "color": "#80A3AB",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70310308822324, 10.776624896988476, 23.88],
+            [106.70310665854508, 10.776624896988455, 23.88]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Arch gateway",
+        "height": 1.07,
+        "width": 0.02,
+        "color": "#80A3AB",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70316048801267, 10.776624896982502, 23.88],
+            [106.70315691769083, 10.776624896982483, 23.88]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Arch gateway",
+        "height": 0.07,
+        "width": 0.3,
+        "color": "#BABABA",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7031155385763, 10.776624896988341, 25.08],
+            [106.70313192543807, 10.77662489698803, 25.76]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Arch gateway",
+        "height": 0.07,
+        "width": 0.3,
+        "color": "#BABABA",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7031480376596, 10.77662489698237, 25.08],
+            [106.70313192543807, 10.77662489698803, 25.76]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Arch gateway",
+        "height": 0.07,
+        "width": 0.3,
+        "color": "#BABABA",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7031155385763, 10.776624896988341, 25.08],
+            [106.7031480376596, 10.77662489698237, 25.08]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

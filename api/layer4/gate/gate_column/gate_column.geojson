@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Gate column",
+        "height": 4.39,
+        "width": 0.12,
+        "color": "#aaa494",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70311755260398, 10.776624896988054, 19.29],
+            [106.70312267921997, 10.77662489698801, 19.29]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Gate column",
+        "height": 4.39,
+        "width": 0.12,
+        "color": "#aaa494",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70314089701593, 10.776624896987213, 19.29],
+            [106.70314602363194, 10.77662489698717, 19.29]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

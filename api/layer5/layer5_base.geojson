@@ -1,0 +1,389 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70296366174469, 10.776624896919621, 25],
+            [106.70303058239233, 10.776624896912441, 25],
+            [106.70303058239233, 10.77659863672155, 25],
+            [106.70307434171765, 10.77659863671848, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70329817425697, 10.776624896973338, 25],
+            [106.70323125360936, 10.77662489696616, 25],
+            [106.70323125360936, 10.776598636775267, 25],
+            [106.70318749428404, 10.776598636772198, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70329817425697, 10.776617792332651, 25],
+            [106.70329817425697, 10.776719235809798, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70329817420202, 10.776712221097268, 25],
+            [106.70327199183437, 10.776712221096169, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032647596419, 10.776712221099277, 25],
+            [106.7032647596419, 10.776990291339827, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032647596419, 10.776990291339827, 25],
+            [106.7032647596419, 10.777063945779352, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032647596419, 10.777063945779352, 25],
+            [106.7032647596419, 10.777341926087741, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70327199184953, 10.777334821446914, 25],
+            [106.70327199184953, 10.777422775099975, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70296366174469, 10.776617792278934, 25],
+            [106.70296366174469, 10.776719235756083, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70296366174469, 10.776712131115396, 25],
+            [106.70298984411237, 10.776712131114294, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70299707630542, 10.7767121311134, 25],
+            [106.70299707630542, 10.77699020135395, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70299707630542, 10.77699020135395, 25],
+            [106.70299707630542, 10.777063855793477, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70299707630542, 10.777063855793477, 25],
+            [106.70299707635957, 10.77734192603803, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70298979893668, 10.777334776979677, 25],
+            [106.70298979893668, 10.777422730632734, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70327199184902, 10.777415490594965, 25],
+            [106.70319353610937, 10.7774154905851, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70320090619673, 10.77741553500377, 25],
+            [106.70320090619673, 10.777385857390776, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032009514119, 10.777378708332293, 25],
+            [106.70306088458926, 10.777378708300844, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70306088458926, 10.777415490554525, 25],
+            [106.70306088458926, 10.777385812941528, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer5 - Nền 5",
+        "height": 0.33,
+        "width": 1.58,
+        "color": "#ccdcdcd",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70298979893708, 10.777415534963318, 25],
+            [106.70306825467672, 10.77741553495345, 25]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}
