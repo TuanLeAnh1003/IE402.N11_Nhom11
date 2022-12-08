@@ -91,6 +91,7 @@ import layer4Windowframe_y_inside_frontImport from "./api/layer4/window/window_f
 import layer4Windowframe_y_middle_frontImport from "./api/layer4/window/window_front/windowframe_y/windowframe_middle_front.geojson" assert { type: "json" };
 import layer4Windowcurve_outside_frontImport from "./api/layer4/window/window_front/windowcurve/windowcurve_outside_front.geojson" assert { type: "json" };
 import layer4Windowcurve_inside_frontImport from "./api/layer4/window/window_front/windowcurve/windowcurve_inside_front.geojson" assert { type: "json" };
+import layer4Windowwall_frontImport from "./api/layer4/window/window_front/windowcurve/windowwall_front.geojson" assert { type: "json" };
 //Window right
 import layer4Windowsill_bottom_rightImport from "./api/layer4/window/window_right/windowsill/windowsill_bottom_right.geojson" assert { type: "json" };
 import layer4Windowsill_middle_rightImport from "./api/layer4/window/window_right/windowsill/windowsill_middle_right.geojson" assert { type: "json" };
@@ -105,6 +106,11 @@ import layer4Windowframe_y_inside_rightImport from "./api/layer4/window/window_r
 import layer4Windowframe_y_middle_rightImport from "./api/layer4/window/window_right/windowframe_y/windowframe_middle_right.geojson" assert { type: "json" };
 import layer4Windowcurve_outside_rightImport from "./api/layer4/window/window_right/windowcurve/windowcurve_outside_right.geojson" assert { type: "json" };
 import layer4Windowcurve_inside_rightImport from "./api/layer4/window/window_right/windowcurve/windowcurve_inside_right.geojson" assert { type: "json" };
+import layer4Windowwall_rightImport from "./api/layer4/window/window_right/windowcurve/windowwall_right.geojson" assert { type: "json" };
+import layer4Balconybase_rightImport from "./api/layer4/balcony/balcony_right/balconybase_right.geojson" assert { type: "json" };
+import layer4Balconybasemain_rightImport from "./api/layer4/balcony/balcony_right/balconybasemain_right.geojson" assert { type: "json" };
+import layer4Balconyrail_rightImport from "./api/layer4/balcony/balcony_right/balconyrail_right.geojson" assert { type: "json" };
+import layer4Balconyrail_middle_rightImport from "./api/layer4/balcony/balcony_right/balconyrail_middle_right.geojson" assert { type: "json" };
 //Window left
 import layer4Windowcrosscolumn_rightImport from "./api/layer4/window/window_right/windowcolumn/windowcrosscolumn_right.geojson" assert { type: "json" };
 import layer4Windowsill_bottom_leftImport from "./api/layer4/window/window_left/windowsill/windowsill_bottom_left.geojson" assert { type: "json" };
@@ -121,6 +127,11 @@ import layer4Windowframe_y_inside_leftImport from "./api/layer4/window/window_le
 import layer4Windowframe_y_middle_leftImport from "./api/layer4/window/window_left/windowframe_y/windowframe_middle_left.geojson" assert { type: "json" };
 import layer4Windowcurve_outside_leftImport from "./api/layer4/window/window_left/windowcurve/windowcurve_outside_left.geojson" assert { type: "json" };
 import layer4Windowcurve_inside_leftImport from "./api/layer4/window/window_left/windowcurve/windowcurve_inside_left.geojson" assert { type: "json" };
+import layer4Windowwall_leftImport from "./api/layer4/window/window_left/windowcurve/windowwall_left.geojson" assert { type: "json" };
+import layer4Balconybase_leftImport from "./api/layer4/balcony/balcony_left/balconybase_left.geojson" assert { type: "json" };
+import layer4Balconybasemain_leftImport from "./api/layer4/balcony/balcony_left/balconybasemain_left.geojson" assert { type: "json" };
+import layer4Balconyrail_leftImport from "./api/layer4/balcony/balcony_left/balconyrail_left.geojson" assert { type: "json" };
+import layer4Balconyrail_middle_leftImport from "./api/layer4/balcony/balcony_left/balconyrail_middle_left.geojson" assert { type: "json" };
 //Window back
 import layer4Windowsill_bottom_backImport from "./api/layer4/window/window_back/windowsill/windowsill_bottom_back.geojson" assert { type: "json" };
 import layer4Windowsill_middle_backImport from "./api/layer4/window/window_back/windowsill/windowsill_middle_back.geojson" assert { type: "json" };
@@ -1385,6 +1396,32 @@ require([
     },
   };
 
+  //Tường cửa sổ mặt trước
+  const layer4Windowwall_front = new GeoJSONLayer({
+    url: "./api/layer4/window/window_front/windowcurve/windowwall_front.geojson",
+  });
+  layer4Windowwall_front.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer4Windowwall_frontImport.features[0].properties.color,
+          },
+          width: layer4Windowwall_frontImport.features[0].properties.width,
+          height: layer4Windowwall_frontImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
   const layer4Layer4_columnsFooter_Back = new GeoJSONLayer({
     url: "./api/layer4/layer4_columnsFooter_Back/layer4_columnsFooter_Back.geojson",
   });
@@ -2359,6 +2396,32 @@ require([
     },
   };
 
+  //Tường cửa sổ mặt phải
+  const layer4Windowwall_right = new GeoJSONLayer({
+    url: "./api/layer4/window/window_right/windowcurve/windowwall_right.geojson",
+  });
+  layer4Windowwall_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer4Windowwall_rightImport.features[0].properties.color,
+          },
+          width: layer4Windowwall_rightImport.features[0].properties.width,
+          height: layer4Windowwall_rightImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
   //Bệ Cửa sổ dưới mặt trái
   const layer4Windowsill_bottom_left = new GeoJSONLayer({
     url: "./api/layer4/window/window_left/windowsill/windowsill_bottom_left.geojson",
@@ -2688,8 +2751,7 @@ require([
           profile: "quad",
           material: {
             color:
-              layer4Windowcurve_outside_leftImport.features[0].properties
-                .color,
+              layer4Windowcurve_outside_leftImport.features[0].properties.color,
           },
           width:
             layer4Windowcurve_outside_leftImport.features[0].properties.width,
@@ -2724,6 +2786,32 @@ require([
             layer4Windowcurve_inside_leftImport.features[0].properties.width,
           height:
             layer4Windowcurve_inside_leftImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
+  //Tường cửa sổ mặt trái
+  const layer4Windowwall_left = new GeoJSONLayer({
+    url: "./api/layer4/window/window_left/windowcurve/windowwall_left.geojson",
+  });
+  layer4Windowwall_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer4Windowwall_leftImport.features[0].properties.color,
+          },
+          width: layer4Windowwall_leftImport.features[0].properties.width,
+          height: layer4Windowwall_leftImport.features[0].properties.height,
           join: "bevel",
           cap: "butt",
           profileRotation: "all",
@@ -2990,6 +3078,210 @@ require([
     },
   };
 
+  //Nền ban công chính mặt phải
+  const layer4Balconybasemain_right = new GeoJSONLayer({
+    url: "./api/layer4/balcony/balcony_right/balconybasemain_right.geojson",
+  });
+  layer4Balconybasemain_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Balconybasemain_rightImport.features[0].properties.height,
+          material: {
+            color:
+              layer4Balconybasemain_rightImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  //Nền ban công trong mặt phải
+  const layer4Balconybase_right = new GeoJSONLayer({
+    url: "./api/layer4/balcony/balcony_right/balconybase_right.geojson",
+  });
+  layer4Balconybase_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer4Balconybase_rightImport.features[0].properties.color,
+          },
+          width: layer4Balconybase_rightImport.features[0].properties.width,
+          height: layer4Balconybase_rightImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
+  //Lan can trên dưới ban công mặt phải
+  const layer4Balconyrail_right = new GeoJSONLayer({
+    url: "./api/layer4/balcony/balcony_right/balconyrail_right.geojson",
+  });
+  layer4Balconyrail_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer4Balconyrail_rightImport.features[0].properties.color,
+          },
+          width: layer4Balconyrail_rightImport.features[0].properties.width,
+          height: layer4Balconyrail_rightImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
+  //Lan can giữa ban công mặt phải
+  const layer4Balconyrail_middle_right = new GeoJSONLayer({
+    url: "./api/layer4/balcony/balcony_right/balconyrail_middle_right.geojson",
+  });
+  layer4Balconyrail_middle_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color:
+              layer4Balconyrail_middle_rightImport.features[0].properties.color,
+          },
+          width:
+            layer4Balconyrail_middle_rightImport.features[0].properties.width,
+          height:
+            layer4Balconyrail_middle_rightImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
+  //Nền ban công chính mặt phải
+  const layer4Balconybasemain_left = new GeoJSONLayer({
+    url: "./api/layer4/balcony/balcony_left/balconybasemain_left.geojson",
+  });
+  layer4Balconybasemain_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Balconybasemain_leftImport.features[0].properties.height,
+          material: {
+            color:
+              layer4Balconybasemain_leftImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  //Nền ban công trong mặt trái
+  const layer4Balconybase_left = new GeoJSONLayer({
+    url: "./api/layer4/balcony/balcony_left/balconybase_left.geojson",
+  });
+  layer4Balconybase_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer4Balconybase_leftImport.features[0].properties.color,
+          },
+          width: layer4Balconybase_leftImport.features[0].properties.width,
+          height: layer4Balconybase_leftImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
+  //Lan can trên dưới ban công mặt trái
+  const layer4Balconyrail_left = new GeoJSONLayer({
+    url: "./api/layer4/balcony/balcony_left/balconyrail_left.geojson",
+  });
+  layer4Balconyrail_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer4Balconyrail_leftImport.features[0].properties.color,
+          },
+          width: layer4Balconyrail_leftImport.features[0].properties.width,
+          height: layer4Balconyrail_leftImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
+  //Lan can giữa ban công mặt trái
+  const layer4Balconyrail_middle_left = new GeoJSONLayer({
+    url: "./api/layer4/balcony/balcony_left/balconyrail_middle_left.geojson",
+  });
+  layer4Balconyrail_middle_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color:
+              layer4Balconyrail_middle_leftImport.features[0].properties.color,
+          },
+          width:
+            layer4Balconyrail_middle_leftImport.features[0].properties.width,
+          height:
+            layer4Balconyrail_middle_leftImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
   const layer4UpperWindowBorder_leftRight_right = new GeoJSONLayer({
     url: "./api/layer4/layer4_upper/upperWindow/upperWindow_right/windowBorder_leftRight_right.geojson",
   });
@@ -3156,8 +3448,9 @@ require([
           size: layer4UpperWindowMirror_leftImport.features[0].properties
             .height,
           material: {
-            color: layer4UpperWindowMirror_leftImport.features[0].properties.color,
-          }
+            color:
+              layer4UpperWindowMirror_leftImport.features[0].properties.color,
+          },
         },
       ],
     },
@@ -3260,9 +3553,11 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWindow2Mirror_rightImport.features[0].properties.height,
+          size: layer4UpperWindow2Mirror_rightImport.features[0].properties
+            .height,
           material: {
-            color: layer4UpperWindowMirror_rightImport.features[0].properties.color,
+            color:
+              layer4UpperWindowMirror_rightImport.features[0].properties.color,
           },
         },
       ],
@@ -3279,9 +3574,12 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWindow2Border_vertical_rightImport.features[0].properties.height,
+          size: layer4UpperWindow2Border_vertical_rightImport.features[0]
+            .properties.height,
           material: {
-            color: layer4UpperWindow2Border_vertical_rightImport.features[0].properties.color,
+            color:
+              layer4UpperWindow2Border_vertical_rightImport.features[0]
+                .properties.color,
           },
         },
       ],
@@ -3298,9 +3596,12 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWindow2Border_horizontal_rightImport.features[0].properties.height,
+          size: layer4UpperWindow2Border_horizontal_rightImport.features[0]
+            .properties.height,
           material: {
-            color: layer4UpperWindow2Border_horizontal_rightImport.features[0].properties.color,
+            color:
+              layer4UpperWindow2Border_horizontal_rightImport.features[0]
+                .properties.color,
           },
         },
       ],
@@ -3317,9 +3618,12 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWindow2_higherPlinth_rightImport.features[0].properties.height,
+          size: layer4UpperWindow2_higherPlinth_rightImport.features[0]
+            .properties.height,
           material: {
-            color: layer4UpperWindow2_higherPlinth_rightImport.features[0].properties.color,
+            color:
+              layer4UpperWindow2_higherPlinth_rightImport.features[0].properties
+                .color,
           },
         },
       ],
@@ -3336,9 +3640,12 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWindow2_lowerPlinth_rightImport.features[0].properties.height,
+          size: layer4UpperWindow2_lowerPlinth_rightImport.features[0]
+            .properties.height,
           material: {
-            color: layer4UpperWindow2_lowerPlinth_rightImport.features[0].properties.color,
+            color:
+              layer4UpperWindow2_lowerPlinth_rightImport.features[0].properties
+                .color,
           },
         },
       ],
@@ -3355,9 +3662,11 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWindow2Mirror_leftImport.features[0].properties.height,
+          size: layer4UpperWindow2Mirror_leftImport.features[0].properties
+            .height,
           material: {
-            color: layer4UpperWindowMirror_leftImport.features[0].properties.color,
+            color:
+              layer4UpperWindowMirror_leftImport.features[0].properties.color,
           },
         },
       ],
@@ -3374,9 +3683,12 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWindow2Border_vertical_leftImport.features[0].properties.height,
+          size: layer4UpperWindow2Border_vertical_leftImport.features[0]
+            .properties.height,
           material: {
-            color: layer4UpperWindow2Border_vertical_leftImport.features[0].properties.color,
+            color:
+              layer4UpperWindow2Border_vertical_leftImport.features[0]
+                .properties.color,
           },
         },
       ],
@@ -3393,9 +3705,12 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWindow2Border_horizontal_leftImport.features[0].properties.height,
+          size: layer4UpperWindow2Border_horizontal_leftImport.features[0]
+            .properties.height,
           material: {
-            color: layer4UpperWindow2Border_horizontal_leftImport.features[0].properties.color,
+            color:
+              layer4UpperWindow2Border_horizontal_leftImport.features[0]
+                .properties.color,
           },
         },
       ],
@@ -3412,9 +3727,12 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWindow2_higherPlinth_leftImport.features[0].properties.height,
+          size: layer4UpperWindow2_higherPlinth_leftImport.features[0]
+            .properties.height,
           material: {
-            color: layer4UpperWindow2_higherPlinth_leftImport.features[0].properties.color,
+            color:
+              layer4UpperWindow2_higherPlinth_leftImport.features[0].properties
+                .color,
           },
         },
       ],
@@ -3431,9 +3749,12 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWindow2_lowerPlinth_leftImport.features[0].properties.height,
+          size: layer4UpperWindow2_lowerPlinth_leftImport.features[0].properties
+            .height,
           material: {
-            color: layer4UpperWindow2_lowerPlinth_leftImport.features[0].properties.color,
+            color:
+              layer4UpperWindow2_lowerPlinth_leftImport.features[0].properties
+                .color,
           },
         },
       ],
@@ -4212,7 +4533,7 @@ require([
       layer4UpperWindowBorder_leftRight_back,
       layer4UpperWindowBorder_top_back,
       layer4UpperWindowBorder_bottom_back,
-      layer4UpperWindowMirror_back,  
+      layer4UpperWindowMirror_back,
       layer4Windowsill_front,
       layer4Windowcolumn_front,
       layer4Windowcrosscolumn_front,
@@ -4225,6 +4546,7 @@ require([
       layer4Windowframe_y_middle_front,
       layer4Windowcurve_inside_front,
       layer4Windowcurve_outside_front,
+      layer4Windowwall_front,
       layer4Windowsill_bottom_right,
       layer4Windowsill_middle_right,
       layer4Windowsill_top_right,
@@ -4239,6 +4561,7 @@ require([
       layer4Windowframe_y_middle_right,
       layer4Windowcurve_inside_right,
       layer4Windowcurve_outside_right,
+      layer4Windowwall_right,
       layer4Windowsill_bottom_left,
       layer4Windowsill_middle_left,
       layer4Windowsill_top_left,
@@ -4253,6 +4576,7 @@ require([
       layer4Windowframe_y_middle_left,
       layer4Windowcurve_inside_left,
       layer4Windowcurve_outside_left,
+      layer4Windowwall_left,
       layer4Windowsill_bottom_back,
       layer4Windowsill_middle_back,
       layer4Windowsill_top_back,
@@ -4298,7 +4622,15 @@ require([
       layer4_windowBalconyBigPianoLeft,
       layer4_windowBalconyDecorsLeft,
 
+      layer4Balconybase_left,
+      layer4Balconybasemain_left,
+      layer4Balconybase_right,
+      layer4Balconybasemain_right,
       layer4Balconybase_back,
+      layer4Balconyrail_right,
+      layer4Balconyrail_middle_right,
+      layer4Balconyrail_left,
+      layer4Balconyrail_middle_left,
       // layer5Layer5,
       layer4Gate_wallgate,
       layer4Gate_gatecolumn,
