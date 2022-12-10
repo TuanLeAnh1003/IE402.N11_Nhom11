@@ -181,6 +181,8 @@ import layer4UpperWall_above_backImport from "./api/layer4/layer4_upper/upperWal
 //Layer 4 - Gate
 import layer4Gate_wallgateImport from "./api/layer4/gate/wallgate.geojson" assert { type: "json" };
 import layer4Gate_gatecolumnImport from "./api/layer4/gate/gate_column/gate_column.geojson" assert { type: "json" };
+import layer4Gate_gatecolumnFooter_aboveImport from "./api/layer4/gate/gate_column/gate_columnFooter_above.geojson" assert { type: "json" };
+import layer4Gate_gatecolumnFooter_belowImport from "./api/layer4/gate/gate_column/gate_columnFooter_below.geojson" assert { type: "json" };
 import layer4Gate_archwhite_xImport from "./api/layer4/gate/arch/arch_white/arch_white_x.geojson" assert { type: "json" };
 import layer4Gate_archwhite_y_outImport from "./api/layer4/gate/arch/arch_white/arch_white_y_out.geojson" assert { type: "json" };
 import layer4Gate_archwhite_y_inImport from "./api/layer4/gate/arch/arch_white/arch_white_y_in.geojson" assert { type: "json" };
@@ -3527,6 +3529,44 @@ require([
     },
   };
 
+  const layer4Gate_gatecolumnFooter_below = new GeoJSONLayer({
+    url: "./api/layer4/gate/gate_column/gate_columnFooter_below.geojson",
+  });
+  layer4Gate_gatecolumnFooter_below.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Gate_gatecolumnFooter_belowImport.features[0].properties.height,
+          material: {
+            color: layer4Gate_gatecolumnFooter_belowImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4Gate_gatecolumnFooter_above = new GeoJSONLayer({
+    url: "./api/layer4/gate/gate_column/gate_columnFooter_above.geojson",
+  });
+  layer4Gate_gatecolumnFooter_above.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4Gate_gatecolumnFooter_aboveImport.features[0].properties.height,
+          material: {
+            color: layer4Gate_gatecolumnFooter_aboveImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
   // Layer 4 - Gate arch white x
   const layer4Gate_archwhite_x = new GeoJSONLayer({
     url: "./api/layer4/gate/arch/arch_white/arch_white_x.geojson",
@@ -4602,6 +4642,8 @@ require([
       // layer5Layer5,
       layer4Gate_wallgate,
       layer4Gate_gatecolumn,
+      layer4Gate_gatecolumnFooter_above,
+      layer4Gate_gatecolumnFooter_below,
       layer4Gate_archwhite_x,
       layer4Gate_archwhite_y_out,
       layer4Gate_archwhite_y_in,
