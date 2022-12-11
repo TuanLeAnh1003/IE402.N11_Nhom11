@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 1",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70296723206684, 10.776682003841577, 17.06],
+            [106.70296723206684, 10.7766550241934, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Ban công trái cửa sổ 2",
+        "height": 0.41,
+        "width": 0.38,
+        "color": "#c7c1b8",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70299890724002, 10.776753409975067, 18.87],
+            [106.70299890724023, 10.776726430326892, 18.87]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}
