@@ -180,7 +180,9 @@ import layer4Gate_archwhite_y_outImport from "./api/layer4/gate/arch/arch_white/
 import layer4Gate_archwhite_y_inImport from "./api/layer4/gate/arch/arch_white/arch_white_y_in.geojson" assert { type: "json" };
 import layer4Gate_arch_rectangleImport from "./api/layer4/gate/arch/arch_white/arch_rectangle.geojson" assert { type: "json" };
 import layer4Gate_arch_triangle_outlineImport from "./api/layer4/gate/arch/arch_white/arch_triangle_outline.geojson" assert { type: "json" };
-import layer4Gate_arch_triangle_insideImport from "./api/layer4/gate/arch/arch_white/arch_triangle_inside.geojson" assert { type: "json" };import layer4Gate_archred_xImport from "./api/layer4/gate/arch/arch_red/arch_red_x.geojson" assert { type: "json" };
+import layer4Gate_arch_triangle_insideImport from "./api/layer4/gate/arch/arch_white/arch_triangle_inside.geojson" assert { type: "json" };
+import layer4Gate_archred_xImport from "./api/layer4/gate/arch/arch_red/arch_red_x.geojson" assert { type: "json" };
+import layer4Gate_archred_outsideImport from "./api/layer4/gate/arch/arch_red/arch_red_outside.geojson" assert { type: "json" };
 import layer4Gate_archred_y_outImport from "./api/layer4/gate/arch/arch_red/arch_red_y_out.geojson" assert { type: "json" };
 import layer4Gate_archred_y_middleImport from "./api/layer4/gate/arch/arch_red/arch_red_y_middle.geojson" assert { type: "json" };
 import layer4Gate_archred_y_inImport from "./api/layer4/gate/arch/arch_red/arch_red_y_in.geojson" assert { type: "json" };
@@ -188,6 +190,7 @@ import layer4Gate_archblue_yImport from "./api/layer4/gate/arch/arch_blue/arch_b
 import layer4Gate_archblue_insideImport from "./api/layer4/gate/arch/arch_blue/arch_blue_inside.geojson" assert { type: "json" };
 import layer4Gate_archblue_curve_outImport from "./api/layer4/gate/arch/arch_blue/arch_blue_curve_out.geojson" assert { type: "json" };
 import layer4Gate_archblue_curve_inImport from "./api/layer4/gate/arch/arch_blue/arch_blue_curve_in.geojson" assert { type: "json" };
+import layer4Gate_archyellow_bottomImport from "./api/layer4/gate/arch/arch_yellow/arch_yellow_bottom.geojson" assert { type: "json" };
 //Layer 5
 import layer5Layer5baseImport from "./api/layer5/layer5_base.geojson" assert { type: "json" };
 import layer5Layer5main_outsideImport from "./api/layer5/layer5_main_outside.geojson" assert { type: "json" };
@@ -3850,7 +3853,7 @@ require([
           height: layer4Gate_archwhite_xImport.features[0].properties.height,
           join: "miter",
           cap: "butt",
-          profileRotation: "heading",
+          profileRotation: "all",
           anchor: "bottom",
         },
       ],
@@ -4015,6 +4018,34 @@ require([
           join: "miter",
           cap: "butt",
           profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
+  // Layer 4 - Gate arch red outside
+  const layer4Gate_archred_outside = new GeoJSONLayer({
+    url: "./api/layer4/gate/arch/arch_red/arch_red_outside.geojson",
+  });
+  layer4Gate_archred_outside.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color:
+              layer4Gate_archred_outsideImport.features[0].properties.color,
+          },
+          width: layer4Gate_archred_outsideImport.features[0].properties.width,
+          height:
+            layer4Gate_archred_outsideImport.features[0].properties.height,
+          join: "miter",
+          cap: "butt",
+          profileRotation: "all",
           anchor: "bottom",
         },
       ],
@@ -4213,6 +4244,32 @@ require([
     },
   };
 
+  // Layer 4 - Gate arch yellow bottom
+  const layer4Gate_archyellow_bottom = new GeoJSONLayer({
+    url: "./api/layer4/gate/arch/arch_yellow/arch_yellow_bottom.geojson",
+  });
+  layer4Gate_archyellow_bottom.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer4Gate_archyellow_bottomImport.features[0].properties.color,
+          },
+          width: layer4Gate_archyellow_bottomImport.features[0].properties.width,
+          height: layer4Gate_archyellow_bottomImport.features[0].properties.height,
+          join: "miter",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
   //Nền 5
   const layer5Layer5base = new GeoJSONLayer({
     url: "./api/layer5/layer5_base.geojson",
@@ -4232,7 +4289,7 @@ require([
           height: layer5Layer5baseImport.features[0].properties.height,
           join: "miter",
           cap: "butt",
-          profileRotation: "heading",
+          profileRotation: "all",
           anchor: "bottom",
         },
       ],
@@ -4641,6 +4698,7 @@ require([
       layer4Gate_arch_triangle_outline,
       layer4Gate_arch_triangle_inside,
       layer4Gate_archred_x,
+      layer4Gate_archred_outside,
       layer4Gate_archred_y_out,
       layer4Gate_archred_y_middle,
       layer4Gate_archred_y_in,
@@ -4648,6 +4706,7 @@ require([
       layer4Gate_archblue_curve_in,
       layer4Gate_archblue_curve_out,
       layer4Gate_archblue_inside,
+      layer4Gate_archyellow_bottom,
       layer4Balconybase_back,
       layer5Layer5base,
       layer5Layer5main_outside,
@@ -4667,10 +4726,19 @@ require([
     container: "viewDiv",
     map: map,
     camera: {
-      position: [106.70325054448642, 10.776740223222385, 1000],
+      position: [106.7031297283169, 10.776624896988366, 40.75],
       heading: 0,
       tilt: 0,
     },
   });
+  // const view = new SceneView({
+  //   container: "viewDiv",
+  //   map: map,
+  //   camera: {
+  //     position: [106.70325054448642, 10.776740223222385, 1000],
+  //     heading: 0,
+  //     tilt: 0,
+  //   },
+  // });
   view.popup.defaultPopupTemplateEnabled = true;
 });
