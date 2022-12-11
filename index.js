@@ -92,6 +92,8 @@ import layer4Windowframe_y_middle_frontImport from "./api/layer4/window/window_f
 import layer4Windowcurve_outside_frontImport from "./api/layer4/window/window_front/windowcurve/windowcurve_outside_front.geojson" assert { type: "json" };
 import layer4Windowcurve_inside_frontImport from "./api/layer4/window/window_front/windowcurve/windowcurve_inside_front.geojson" assert { type: "json" };
 import layer4Windowwall_frontImport from "./api/layer4/window/window_front/windowcurve/windowwall_front.geojson" assert { type: "json" };
+import layer4Windowglass_frontImport from "./api/layer4/window/window_front/windowdecor/windowglass_front.geojson" assert { type: "json" };
+import layer4Windowdecor_base_frontImport from "./api/layer4/window/window_front/windowdecor/windowdecor_base_front.geojson" assert { type: "json" };
 //Window right
 import layer4Windowsill_bottom_rightImport from "./api/layer4/window/window_right/windowsill/windowsill_bottom_right.geojson" assert { type: "json" };
 import layer4Windowsill_middle_rightImport from "./api/layer4/window/window_right/windowsill/windowsill_middle_right.geojson" assert { type: "json" };
@@ -111,6 +113,8 @@ import layer4Balconybase_rightImport from "./api/layer4/balcony/balcony_right/ba
 import layer4Balconybasemain_rightImport from "./api/layer4/balcony/balcony_right/balconybasemain_right.geojson" assert { type: "json" };
 import layer4Balconyrail_rightImport from "./api/layer4/balcony/balcony_right/balconyrail_right.geojson" assert { type: "json" };
 import layer4Balconyrail_middle_rightImport from "./api/layer4/balcony/balcony_right/balconyrail_middle_right.geojson" assert { type: "json" };
+import layer4Windowglass_rightImport from "./api/layer4/window/window_right/windowdecor/windowglass_right.geojson" assert { type: "json" };
+import layer4Windowdecor_base_rightImport from "./api/layer4/window/window_right/windowdecor/windowdecor_base_right.geojson" assert { type: "json" };
 //Window left
 import layer4Windowcrosscolumn_rightImport from "./api/layer4/window/window_right/windowcolumn/windowcrosscolumn_right.geojson" assert { type: "json" };
 import layer4Windowsill_bottom_leftImport from "./api/layer4/window/window_left/windowsill/windowsill_bottom_left.geojson" assert { type: "json" };
@@ -132,6 +136,8 @@ import layer4Balconybase_leftImport from "./api/layer4/balcony/balcony_left/balc
 import layer4Balconybasemain_leftImport from "./api/layer4/balcony/balcony_left/balconybasemain_left.geojson" assert { type: "json" };
 import layer4Balconyrail_leftImport from "./api/layer4/balcony/balcony_left/balconyrail_left.geojson" assert { type: "json" };
 import layer4Balconyrail_middle_leftImport from "./api/layer4/balcony/balcony_left/balconyrail_middle_left.geojson" assert { type: "json" };
+import layer4Windowglass_leftImport from "./api/layer4/window/window_left/windowdecor/windowglass_left.geojson" assert { type: "json" };
+import layer4Windowdecor_base_leftImport from "./api/layer4/window/window_left/windowdecor/windowdecor_base_left.geojson" assert { type: "json" };
 //Window back
 import layer4Windowsill_bottom_backImport from "./api/layer4/window/window_back/windowsill/windowsill_bottom_back.geojson" assert { type: "json" };
 import layer4Windowsill_middle_backImport from "./api/layer4/window/window_back/windowsill/windowsill_middle_back.geojson" assert { type: "json" };
@@ -143,6 +149,7 @@ import layer4Windowframe_curve_backImport from "./api/layer4/window/window_back/
 import layer4Windowframe_y_outside_backImport from "./api/layer4/window/window_back/windowframe_y/windowframe_outside_back.geojson" assert { type: "json" };
 import layer4Windowframe_y_inside_backImport from "./api/layer4/window/window_back/windowframe_y/windowframe_inside_back.geojson" assert { type: "json" };
 import layer4Balconybase_backImport from "./api/layer4/balcony/balcony_back/balconybase_back.geojson" assert { type: "json" };
+import layer4Windowglass_backImport from "./api/layer4/window/window_back/windowdecor/windowglass_back.geojson" assert { type: "json" };
 
 import layer4UpperWindowBorder_leftRight_rightImport from "./api/layer4/layer4_upper/upperWindow/upperWindow_right/windowBorder_leftRight_right.geojson" assert { type: "json" };
 import layer4UpperWindowBorder_top_rightImport from "./api/layer4/layer4_upper/upperWindow/upperWindow_right/windowBorder_top_right.geojson" assert { type: "json" };
@@ -1420,6 +1427,197 @@ require([
           cap: "butt",
           profileRotation: "all",
           anchor: "bottom",
+        },
+      ],
+    },
+  };
+
+  // Cửa kính cửa sổ mặt trước
+  const layer4Windowglass_front = new GeoJSONLayer({
+    url: "./api/layer4/window/window_front/windowdecor/windowglass_front.geojson",
+  });
+  layer4Windowglass_front.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer4Windowglass_frontImport.features[0].properties.color,
+          },
+          width: layer4Windowglass_frontImport.features[0].properties.width,
+          height: layer4Windowglass_frontImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "heading",
+        },
+      ],
+    },
+  };
+
+  // Cửa kính cửa sổ mặt trái
+  const layer4Windowglass_left = new GeoJSONLayer({
+    url: "./api/layer4/window/window_left/windowdecor/windowglass_left.geojson",
+  });
+  layer4Windowglass_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer4Windowglass_leftImport.features[0].properties.color,
+          },
+          width: layer4Windowglass_leftImport.features[0].properties.width,
+          height: layer4Windowglass_leftImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "heading",
+        },
+      ],
+    },
+  };
+
+  // Cửa kính cửa sổ mặt phải
+  const layer4Windowglass_right = new GeoJSONLayer({
+    url: "./api/layer4/window/window_right/windowdecor/windowglass_right.geojson",
+  });
+  layer4Windowglass_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer4Windowglass_rightImport.features[0].properties.color,
+          },
+          width: layer4Windowglass_rightImport.features[0].properties.width,
+          height: layer4Windowglass_rightImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "heading",
+        },
+      ],
+    },
+  };
+
+  // Cửa kính cửa sổ mặt sau
+  const layer4Windowglass_back = new GeoJSONLayer({
+    url: "./api/layer4/window/window_back/windowdecor/windowglass_back.geojson",
+  });
+  layer4Windowglass_back.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer4Windowglass_backImport.features[0].properties.color,
+          },
+          width: layer4Windowglass_backImport.features[0].properties.width,
+          height: layer4Windowglass_backImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "heading",
+        },
+      ],
+    },
+  };
+
+  // Trang trí cửa sổ phần nền mặt trước
+  const layer4Windowdecor_base_front = new GeoJSONLayer({
+    url: "./api/layer4/window/window_front/windowdecor/windowdecor_base_front.geojson",
+  });
+  layer4Windowdecor_base_front.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color:
+              layer4Windowdecor_base_frontImport.features[0].properties.color,
+          },
+          width:
+            layer4Windowdecor_base_frontImport.features[0].properties.width,
+          height:
+            layer4Windowdecor_base_frontImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "top",
+        },
+      ],
+    },
+  };
+
+  // Trang trí cửa sổ phần nền mặt phải
+  const layer4Windowdecor_base_right = new GeoJSONLayer({
+    url: "./api/layer4/window/window_right/windowdecor/windowdecor_base_right.geojson",
+  });
+  layer4Windowdecor_base_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color:
+              layer4Windowdecor_base_rightImport.features[0].properties.color,
+          },
+          width:
+            layer4Windowdecor_base_rightImport.features[0].properties.width,
+          height:
+            layer4Windowdecor_base_rightImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "top",
+        },
+      ],
+    },
+  };
+
+  // Trang trí cửa sổ phần nền mặt trái
+  const layer4Windowdecor_base_left = new GeoJSONLayer({
+    url: "./api/layer4/window/window_left/windowdecor/windowdecor_base_left.geojson",
+  });
+  layer4Windowdecor_base_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color:
+              layer4Windowdecor_base_leftImport.features[0].properties.color,
+          },
+          width:
+            layer4Windowdecor_base_leftImport.features[0].properties.width,
+          height:
+            layer4Windowdecor_base_leftImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "top",
         },
       ],
     },
@@ -4257,10 +4455,13 @@ require([
           type: "path",
           profile: "quad",
           material: {
-            color: layer4Gate_archyellow_bottomImport.features[0].properties.color,
+            color:
+              layer4Gate_archyellow_bottomImport.features[0].properties.color,
           },
-          width: layer4Gate_archyellow_bottomImport.features[0].properties.width,
-          height: layer4Gate_archyellow_bottomImport.features[0].properties.height,
+          width:
+            layer4Gate_archyellow_bottomImport.features[0].properties.width,
+          height:
+            layer4Gate_archyellow_bottomImport.features[0].properties.height,
           join: "miter",
           cap: "butt",
           profileRotation: "all",
@@ -4604,6 +4805,8 @@ require([
       layer4Windowcurve_inside_front,
       layer4Windowcurve_outside_front,
       layer4Windowwall_front,
+      layer4Windowdecor_base_front,
+      layer4Windowglass_front,
       layer4Windowsill_bottom_right,
       layer4Windowsill_middle_right,
       layer4Windowsill_top_right,
@@ -4619,6 +4822,8 @@ require([
       layer4Windowcurve_inside_right,
       layer4Windowcurve_outside_right,
       layer4Windowwall_right,
+      layer4Windowdecor_base_right,
+      layer4Windowglass_right,
       layer4Windowsill_bottom_left,
       layer4Windowsill_middle_left,
       layer4Windowsill_top_left,
@@ -4634,6 +4839,8 @@ require([
       layer4Windowcurve_inside_left,
       layer4Windowcurve_outside_left,
       layer4Windowwall_left,
+      layer4Windowdecor_base_left,
+      layer4Windowglass_left,
       layer4Windowsill_bottom_back,
       layer4Windowsill_middle_back,
       layer4Windowsill_top_back,
@@ -4643,6 +4850,7 @@ require([
       layer4Windowframe_curve_back,
       layer4Windowframe_y_outside_back,
       layer4Windowframe_y_inside_back,
+      layer4Windowglass_back,
 
       layer4UpperWindowBorder_leftRight_right,
       layer4UpperWindowBorder_top_right,
@@ -4726,19 +4934,10 @@ require([
     container: "viewDiv",
     map: map,
     camera: {
-      position: [106.7031297283169, 10.776624896988366, 40.75],
+      position: [106.70325054448642, 10.776740223222385, 1000],
       heading: 0,
       tilt: 0,
     },
   });
-  // const view = new SceneView({
-  //   container: "viewDiv",
-  //   map: map,
-  //   camera: {
-  //     position: [106.70325054448642, 10.776740223222385, 1000],
-  //     heading: 0,
-  //     tilt: 0,
-  //   },
-  // });
   view.popup.defaultPopupTemplateEnabled = true;
 });
