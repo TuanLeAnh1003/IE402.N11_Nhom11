@@ -160,6 +160,12 @@ import layer4UpperWindow2_higherPlinth_leftImport from "./api/layer4/layer4_uppe
 import layer4UpperWindow2_lowerPlinth_leftImport from "./api/layer4/layer4_upper/upperWindow2/upperWindow2_left/window_lowerPlinth_left.geojson" assert { type: "json" };
 import layer4UpperWindow2Mirror_leftImport from "./api/layer4/layer4_upper/upperWindow2/upperWindow2_left/windowMirror_left.geojson" assert { type: "json" };
 
+
+// gậy trường sinh 
+import layer4Stick_rightImport from "./api/layer4/stick/stick_right.geojson" assert { type: "json" };
+import layer4Stick_leftImport from "./api/layer4/stick/stick_left.geojson" assert { type: "json" };
+import layer4MonkeyStick_leftImport from "./api/layer4/stick/monkeystick_left.geojson" assert { type: "json" };
+import layer4MonkeyStick_rightImport from "./api/layer4/stick/monkeystick_right.geojson" assert { type: "json" };
 // import layer5Layer5Import from "./api/layer5/layer5.geojson" assert { type: "json" };
 //Layer 4 - Gate
 import layer4Gate_wallgateImport from "./api/layer4/gate/wallgate.geojson" assert { type: "json" };
@@ -2493,6 +2499,128 @@ require([
     },
   };
 
+   //Gậy trường sinh bên trái
+   const layer4Stick_left = new GeoJSONLayer({
+    url: "./api/layer4/stick/stick_left.geojson",
+  });
+  layer4Stick_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color:
+            layer4Stick_leftImport.features[0].properties
+                .color,
+          },
+          width:
+          layer4Stick_leftImport.features[0].properties.width,
+          height:
+          layer4Stick_leftImport.features[0].properties
+              .height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
+  // Gậy trường sinh bên phải
+  const layer4Stick_right = new GeoJSONLayer({
+    url: "./api/layer4/stick/stick_right.geojson",
+  });
+  layer4Stick_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color:
+            layer4Stick_rightImport.features[0].properties
+                .color,
+          },
+          width:
+          layer4Stick_rightImport.features[0].properties.width,
+          height:
+          layer4Stick_rightImport.features[0].properties
+              .height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+  // Gậy như ý bên trái
+  const layer4MonkeyStick_left = new GeoJSONLayer({
+    url: "./api/layer4/stick/monkeystick_left.geojson",
+  });
+  layer4MonkeyStick_left.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color:
+            layer4MonkeyStick_leftImport.features[0].properties
+                .color,
+          },
+          width:
+          layer4MonkeyStick_leftImport.features[0].properties.width,
+          height:
+          layer4MonkeyStick_leftImport.features[0].properties
+              .height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+    // Gậy như ý bên phải
+    const layer4MonkeyStick_right = new GeoJSONLayer({
+      url: "./api/layer4/stick/monkeystick_right.geojson",
+    });
+    layer4MonkeyStick_right.renderer = {
+      type: "simple",
+      symbol: {
+        type: "line-3d",
+        symbolLayers: [
+          {
+            type: "path",
+            profile: "quad",
+            material: {
+              color:
+              layer4MonkeyStick_rightImport.features[0].properties
+                  .color,
+            },
+            width:
+            layer4MonkeyStick_rightImport.features[0].properties.width,
+            height:
+            layer4MonkeyStick_rightImport.features[0].properties
+                .height,
+            join: "bevel",
+            cap: "butt",
+            profileRotation: "heading",
+            anchor: "bottom",
+          },
+        ],
+      },
+    };
+
   //Khung cửa sổ viền ngoài chiều ngang mặt trái
   const layer4Windowframe_x_outside_left = new GeoJSONLayer({
     url: "./api/layer4/window/window_left/windowframe_x/windowframe_outside_left.geojson",
@@ -4289,7 +4417,11 @@ require([
       layer4UpperWindow2Mirror_left,
       layer4UpperWindow2_higherPlinth_left,
       layer4UpperWindow2_lowerPlinth_left,
-
+      // gậy trường sinh 
+      layer4Stick_right,
+      layer4Stick_left,
+      layer4MonkeyStick_left,
+      layer4MonkeyStick_right,
       //layer4Balconybase_back,
       layer4_windowBalconyPianoRight,
       layer4_windowBalconyBigPianoRight,

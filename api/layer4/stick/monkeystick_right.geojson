@@ -1,0 +1,117 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Layer4 - gậy trường sinh 1",
+          "height": 0.08,
+          "width": 0.06,
+          "color": "#C0C0BF",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70326503428215,10.776712221099277, 23.22],
+                [106.70326503428215,10.776991010797111, 23.22]
+
+             
+            ]
+          ]
+        },
+        "id": "pp1"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Layer4 - gậy trường sinh 1",
+          "height": 0.08,
+          "width": 0.06,
+          "color": "#C0C0BF",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70326503428214, 10.777062956525585, 23.22],
+                 [106.70326503428214, 10.77734174622342, 23.22]
+
+             
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Layer4 - gậy trường sinh 1",
+          "height": 0.08,
+          "width": 0.06,
+          "color": "#C0C0BF",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70327226648355, 10.777356225301189, 23.22],
+                [106.70327226648355, 10.777401371245805, 23.22]
+
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Layer4 - gậy trường sinh 1",
+          "height": 0.08,
+          "width": 0.06,
+          "color": "#C0C0BF",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70326283714724,10.777415940255677, 23.22],
+                [106.70321019764852,10.777415940251235, 23.22]
+
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Layer4 - gậy trường sinh 1",
+          "height": 0.08,
+          "width": 0.06,
+          "color": "#C0C0BF",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.7032009514062, 10.77737906806366, 23.22], 
+                [106.70306088458337, 10.777379068032214, 23.22]
+
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      
+
+    ]
+}

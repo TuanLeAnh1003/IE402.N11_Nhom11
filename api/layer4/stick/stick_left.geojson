@@ -1,0 +1,91 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Layer4 - gậy trường sinh 4",
+          "height": 0.08,
+          "width": 0.06,
+          "color": "#C0C0BF",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.7029967107866, 10.776712220984106, 23.14], 
+                [106.70299671053837, 10.776991010681938, 23.14]
+             
+            ]
+          ]
+        },
+        "id": "pp1"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Layer4 - gậy trường sinh 4",
+          "height": 0.08,
+          "width": 0.06,
+          "color": "#C0C0BF",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70299671047344, 10.77706304634257, 23.14],
+                [106.70299671022511, 10.777341836040405, 23.14]
+             
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Layer4 - gậy trường sinh 4",
+          "height": 0.08,
+          "width": 0.06,
+          "color": "#C0C0BF",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.7029897526389, 10.77735622517316, 23.14], 
+                [106.70298975259645, 10.777401371117781, 23.14]
+             
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Layer4 - gậy trường sinh 4",
+          "height": 0.08,
+          "width": 0.06,
+          "color": "#C0C0BF",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70305163832406, 10.777415670387693, 23.14],
+                 [106.70299899882534, 10.77741567038325, 23.14]
+             
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+    ]
+}
