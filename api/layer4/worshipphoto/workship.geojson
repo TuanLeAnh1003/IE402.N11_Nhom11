@@ -7,7 +7,7 @@
           "Building name": "Thanh ngang 1 ảnh thờ",
           "height": 0.09,
           "width": 0.06,
-          "color": "#ffffff",
+          "color": "#cdcdcd",
           "idb": "1"
         },
         "geometry": {
@@ -27,7 +27,7 @@
           "Building name": "Thanh ngang 2 ảnh thờ",
           "height": 0.09,
           "width": 0.06,
-          "color": "#ffffff",
+          "color": "#cdcdcd",
           "idb": "1"
         },
         "geometry": {
@@ -48,7 +48,7 @@
           "Building name": "Thanh ngang 2 ảnh thờ",
           "height": 0.09,
           "width": 0.06,
-          "color": "#ffffff",
+          "color": "#cdcdcd",
           "idb": "1"
         },
         "geometry": {
@@ -90,7 +90,7 @@
           "Building name": "Thanh ngang 2 ảnh thờ",
           "height": 0.09,
           "width": 0.06,
-          "color": "#ffffff",
+          "color": "#cdcdcd",
           "idb": "1"
         },
         "geometry": {
@@ -111,7 +111,7 @@
           "Building name": "Thanh ngang 2 ảnh thờ",
           "height": 0.09,
           "width": 0.06,
-          "color": "#ffffff",
+          "color": "#cdcdcd",
           "idb": "1"
         },
         "geometry": {
@@ -153,7 +153,7 @@
           "Building name": "Thanh ngang 2 ảnh thờ",
           "height": 0.09,
           "width": 0.06,
-          "color": "#ffffff",
+          "color": "#cdcdcd",
           "idb": "1"
         },
         "geometry": {
@@ -174,7 +174,7 @@
           "Building name": "Thanh ngang 2 ảnh thờ",
           "height": 0.09,
           "width": 0.06,
-          "color": "#ffffff",
+          "color": "#cdcdcd",
           "idb": "1"
         },
         "geometry": {
@@ -196,7 +196,7 @@
           "Building name": "Thanh ngang 2 ảnh thờ",
           "height": 0.09,
           "width": 0.06,
-          "color": "#ffffff",
+          "color": "#cdcdcd",
           "idb": "1"
         },
         "geometry": {
@@ -218,7 +218,7 @@
           "Building name": "Thanh ngang 2 ảnh thờ",
           "height": 0.09,
           "width": 0.06,
-          "color": "#ffffff",
+          "color": "#cdcdcd",
           "idb": "1"
         },
         "geometry": {
@@ -240,7 +240,7 @@
           "Building name": "Thanh ngang 2 ảnh thờ",
           "height": 0.09,
           "width": 0.06,
-          "color": "#ffffff",
+          "color": "#cdcdcd",
           "idb": "1"
         },
         "geometry": {
@@ -249,6 +249,94 @@
             [
               [106.70320351495872, 10.776598456892922, 17.95],
                [106.70321889480527, 10.776598456892543, 16.12]
+                
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Thanh ngang 2 ảnh thờ",
+          "height": 0.09,
+          "width": 0.06,
+          "color": "#ffffff",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [106.70304458987779, 10.776598456933407, 18.75],
+              [106.70305996972434, 10.776598456933028, 23.31]
+                
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Thanh ngang 2 ảnh thờ",
+          "height": 0.09,
+          "width": 0.06,
+          "color": "#ffffff",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [106.70320351495872, 10.776598456892922, 23.31],
+              [106.70321889480527, 10.776598456892543, 18.75]
+                
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Thanh ngang 2 ảnh thờ",
+          "height": 0.09,
+          "width": 0.06,
+          "color": "#ffffff",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [106.70304458987779, 10.776598456933407, 23.31],
+              [106.70305996972434, 10.776598456933028, 18.75]
+                
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Thanh ngang 2 ảnh thờ",
+          "height": 0.09,
+          "width": 0.06,
+          "color": "#ffffff",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [106.70320351495872, 10.776598456892922, 18.75],
+              [106.70321889480527, 10.776598456892543, 23.31]
                 
             ]
           ]
