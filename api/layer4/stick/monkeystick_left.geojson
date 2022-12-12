@@ -1,0 +1,93 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Layer4 - gậy trường sinh 1",
+          "height": 0.08,
+          "width": 0.06,
+          "color": "#C0C0BF",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70299643614638, 10.776712220983631, 23.22], 
+                [106.70299643589763, 10.776991010681465, 23.22]
+
+             
+            ]
+          ]
+        },
+        "id": "pp1"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Layer4 - gậy trường sinh 1",
+          "height": 0.08,
+          "width": 0.06,
+          "color": "#C0C0BF",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70299643583341, 10.777062956409935, 23.22], 
+                [106.70299643558467, 10.77734174610777, 23.22]
+
+             
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Layer4 - gậy trường sinh 1",
+          "height": 0.08,
+          "width": 0.06,
+          "color": "#C0C0BF",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70298947799805, 10.77735622517291, 23.22], 
+                [106.70298947795561, 10.777401371117527, 23.22]
+
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Layer4 - gậy trường sinh 1",
+          "height": 0.08,
+          "width": 0.06,
+          "color": "#C0C0BF",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70305163832384, 10.777415940184174, 23.22], 
+                [106.70299899882514, 10.777415940179731, 23.22]
+
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 1",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70298682390325, 10.776628404342054, 17.06],
+            [106.70301428791758, 10.776628404340157, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 1",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70324645037097, 10.776628404334048, 17.06],
+            [106.70327391438532, 10.776628404332149, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}

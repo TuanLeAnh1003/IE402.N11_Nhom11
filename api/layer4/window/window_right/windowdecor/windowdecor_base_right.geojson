@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp nền decor cửa sổ 1",
+        "height": 0.15,
+        "width": 0.09,
+        "color": "#C0C0BF",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70299895384294, 10.776624896987485, 23.06],
+            [106.70299895384294, 10.776623548005077, 23],
+            [106.70299913693631, 10.776623458072917, 22.69],
+            [106.70299913693631, 10.776624807055327, 22.69]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}
