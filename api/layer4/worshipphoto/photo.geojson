@@ -1,0 +1,46 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Thanh dọc 1 ảnh thờ",
+          "height": 4.65,
+          "width": 0.01,
+          "color": [128,128,128,0.5],
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70304458987779, 10.776598456933407, 18.75],
+                [106.70305996972434, 10.776598456933028, 18.75]
+            ]
+          ]
+        },
+        "id": "pp1"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Thanh dọc 1 ảnh thờ",
+          "height": 4.65,
+          "width": 0.01,
+          "color": [128,128,128,0.5],
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70320351495872, 10.776598456892922, 18.75],
+                 [106.70321889480527, 10.776598456892543, 18.75]
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+    ]
+  }
+  
