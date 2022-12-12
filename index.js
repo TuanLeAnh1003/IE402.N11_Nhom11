@@ -201,6 +201,15 @@ import layer4UpperWall2_surround_rightImport from "./api/layer4/layer4_upper/upp
 import layer4UpperWall2_surround_leftImport from "./api/layer4/layer4_upper/upperWall/upperWall_left/wall2_surround_left.geojson" assert { type: "json" };
 import layer4UpperWall_above_backImport from "./api/layer4/layer4_upper/upperWall/upperWall_back/wall_above_back.geojson" assert { type: "json" };
 
+import layer4CylinderColumn_frontImport from "./api/layer4/cylinderColumn/cylinderColumn_front/cylinderColumn_front.geojson" assert { type: "json" };
+import layer4CylinderColumn_entranceImport from "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumn_entrance.geojson" assert { type: "json" };
+import layer4CylinderColumn_plinth_entranceImport from "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumn_plinth_entrance.geojson" assert { type: "json" };
+import layer4CylinderColumnFooter_frontImport from "./api/layer4/cylinderColumn/cylinderColumn_front/cylinderColumnFooter_front.geojson" assert { type: "json" };
+import layer4CylinderColumnFooter_surround_frontImport from "./api/layer4/cylinderColumn/cylinderColumn_front/cylinderColumnFooter_surround_front.geojson" assert { type: "json" };
+import layer4CylinderColumnFooter_surround_entranceImport from "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumnFooter_surround_entrance.geojson" assert { type: "json" };
+import layer4CylinderColumnFooter_entranceImport from "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumnFooter_entrance.geojson" assert { type: "json" };
+import layer4CylinderColumnHeader_entranceImport from "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumnHeader_entrance.geojson" assert { type: "json" };
+
 // import layer5Layer5Import from "./api/layer5/layer5.geojson" assert { type: "json" };
 //Layer 4 - Gate
 import layer4Gate_wallgateImport from "./api/layer4/gate/wallgate.geojson" assert { type: "json" };
@@ -4892,6 +4901,171 @@ require([
       ],
     },
   };
+
+  const layer4CylinderColumn_front = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/cylinderColumn_front.geojson",
+  });
+  layer4CylinderColumn_front.renderer = {
+    type: "simple",
+    symbol: {
+      type: "point-3d",
+      symbolLayers: [
+        {
+          type: "object",
+          height: layer4CylinderColumn_frontImport.features[0].properties.height,
+          width: layer4CylinderColumn_frontImport.features[0].properties.width,
+          depth: layer4CylinderColumn_frontImport.features[0].properties.depth,
+          resource: { primitive: "cylinder" },
+          material: {
+            color: layer4CylinderColumn_frontImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4CylinderColumn_entrance = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumn_entrance.geojson",
+  });
+  layer4CylinderColumn_entrance.renderer = {
+    type: "simple",
+    symbol: {
+      type: "point-3d",
+      symbolLayers: [
+        {
+          type: "object",
+          height: layer4CylinderColumn_entranceImport.features[0].properties.height,
+          width: layer4CylinderColumn_entranceImport.features[0].properties.width,
+          depth: layer4CylinderColumn_entranceImport.features[0].properties.depth,
+          resource: { primitive: "cylinder" },
+          material: {
+            color: layer4CylinderColumn_entranceImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4CylinderColumnFooter_surround_front = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/cylinderColumnFooter_surround_front.geojson",
+  });
+  layer4CylinderColumnFooter_surround_front.renderer = {
+    type: "simple",
+    symbol: {
+      type: "point-3d",
+      symbolLayers: [
+        {
+          type: "object",
+          height: layer4CylinderColumnFooter_surround_frontImport.features[0].properties.height,
+          width: layer4CylinderColumnFooter_surround_frontImport.features[0].properties.width,
+          depth: layer4CylinderColumnFooter_surround_frontImport.features[0].properties.depth,
+          resource: { primitive: "cylinder" },
+          material: {
+            color: layer4CylinderColumnFooter_surround_frontImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4CylinderColumnFooter_surround_entrance = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumnFooter_surround_entrance.geojson",
+  });
+  layer4CylinderColumnFooter_surround_entrance.renderer = {
+    type: "simple",
+    symbol: {
+      type: "point-3d",
+      symbolLayers: [
+        {
+          type: "object",
+          height: layer4CylinderColumnFooter_surround_entranceImport.features[0].properties.height,
+          width: layer4CylinderColumnFooter_surround_entranceImport.features[0].properties.width,
+          depth: layer4CylinderColumnFooter_surround_entranceImport.features[0].properties.depth,
+          resource: { primitive: "cylinder" },
+          material: {
+            color: layer4CylinderColumnFooter_surround_entranceImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4CylinderColumn_plinth_entrance = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumn_plinth_entrance.geojson",
+  });
+  layer4CylinderColumn_plinth_entrance.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4CylinderColumn_plinth_entranceImport.features[0].properties.height,
+          material: {
+            color: layer4CylinderColumn_plinth_entranceImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4CylinderColumnFooter_front = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/cylinderColumnFooter_front.geojson",
+  });
+  layer4CylinderColumnFooter_front.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4CylinderColumnFooter_frontImport.features[0].properties.height,
+          material: {
+            color: layer4CylinderColumnFooter_frontImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4CylinderColumnFooter_entrance = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumnFooter_entrance.geojson",
+  });
+  layer4CylinderColumnFooter_entrance.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4CylinderColumnFooter_entranceImport.features[0].properties.height,
+          material: {
+            color: layer4CylinderColumnFooter_entranceImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4CylinderColumnHeader_entrance = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumnHeader_entrance.geojson",
+  });
+  layer4CylinderColumnHeader_entrance.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4CylinderColumnHeader_entranceImport.features[0].properties.height,
+          material: {
+            color: layer4CylinderColumnHeader_entranceImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
   // Layer 4 - Gate arch yellow bottom
   const layer4Gate_archyellow_bottom = new GeoJSONLayer({
     url: "./api/layer4/gate/arch/arch_yellow/arch_yellow_bottom.geojson",
@@ -5350,6 +5524,15 @@ require([
       layer4UpperWall2_surround_right,
       layer4UpperWall2_surround_left,
       layer4UpperWall_above_back,
+
+      layer4CylinderColumn_front,
+      layer4CylinderColumn_entrance,
+      layer4CylinderColumnFooter_surround_front,
+      layer4CylinderColumnFooter_surround_entrance,
+      layer4CylinderColumn_plinth_entrance,
+      layer4CylinderColumnFooter_front,
+      layer4CylinderColumnFooter_entrance,
+      layer4CylinderColumnHeader_entrance,
 
       //layer4Balconybase_back,
       layer4_windowBalconyPianoRight,

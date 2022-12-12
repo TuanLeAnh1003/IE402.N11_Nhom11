@@ -1,0 +1,37 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Cylinder column",
+          "height": 0.2,
+          "width": 0.8,
+          "depth": 0.8,
+          "color": "#bfbcbc",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [106.70311977518811, 10.776594749767833, 14.31]
+        },
+        "id": "pp1"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Cylinder column",
+          "height": 0.2,
+          "width": 0.8,
+          "depth": 0.8,
+          "color": "#bfbcbc",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [106.70314376042586, 10.776594749761012, 14.31]
+        },
+        "id": "pp1"
+      }
+    ]
+}
