@@ -20,6 +20,86 @@
         ]
       },
       "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Ban công phải cửa sổ 2",
+        "height": 0.41,
+        "width": 0.38,
+        "color": "#c7c1b8",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70326302025376, 10.77678209838805, 18.87],
+            [106.70326302025406, 10.776809078036184, 18.87]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Ban công phải cửa sổ 2",
+        "height": 0.41,
+        "width": 0.38,
+        "color": "#c7c1b8",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70326302025376, 10.776837676463293, 18.87],
+            [106.70326302025406, 10.776864656111428, 18.87]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Ban công phải cửa sổ 2",
+        "height": 0.41,
+        "width": 0.38,
+        "color": "#c7c1b8",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70326302025376, 10.77689325453854, 18.87],
+            [106.70326302025406, 10.776920234186672, 18.87]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Ban công phải cửa sổ 2",
+        "height": 0.41,
+        "width": 0.38,
+        "color": "#c7c1b8",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70326302025376, 10.776948832613787, 18.87],
+            [106.70326302025406, 10.776975812261918, 18.87]
+          ]
+        ]
+      },
+      "id": "pp1"
     }
   ]
 }

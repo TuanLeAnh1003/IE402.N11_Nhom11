@@ -1,0 +1,88 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Thanh dọc 1 ảnh thờ",
+          "height": 4.65,
+          "width": 0.06,
+          "color": "#ffffff",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70304458987779, 10.776598456933407, 18.75],
+                [106.70304541379808, 10.776598456933405, 18.75] 
+            ]
+          ]
+        },
+        "id": "pp1"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Thanh dọc 2 ảnh thờ",
+          "height": 4.65,
+          "width": 0.06,
+          "color": "#ffffff",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70305914580395, 10.776598456933067, 18.75], 
+                [106.70305996972424, 10.776598456933066, 18.75]
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Thanh dọc 3 ảnh thờ",
+          "height": 4.65,
+          "width": 0.06,
+          "color": "#ffffff",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70320351495872, 10.776598456892922, 18.75],
+                 [106.70320433887902, 10.77659845689292, 18.75]
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Thanh dọc 4 ảnh thờ",
+          "height": 0.09,
+          "width": 0.06,
+          "color": "#ffffff",
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+                [106.70321807088487, 10.776598456892582, 18.75], 
+                [106.70321889480518, 10.77659845689258, 18.75] 
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+    ]
+  }
+  
