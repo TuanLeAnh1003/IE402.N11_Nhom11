@@ -245,6 +245,10 @@ import layer6Roof_backImport from "./api/layer6/wallback/roof_back.geojson" asse
 import layer6Wall_backImport from "./api/layer6/wallback/wall_back.geojson" assert { type: "json" };
 import layer6Roof_outline_backImport from "./api/layer6/wallback/roof_outline_back.geojson" assert { type: "json" };
 
+// Workship decor
+import layer4WorkshipImport from "./api/layer4/worshipphoto/workship.geojson" assert { type: "json" };
+import layer4RoodImport from "./api/layer4/worshipphoto/rood.geojson" assert { type: "json" };
+import layer4PhotoImport from "./api/layer4/worshipphoto/photo.geojson" assert { type: "json" };
 require([
   "esri/Map",
   "esri/views/SceneView",
@@ -5313,6 +5317,96 @@ require([
       ],
     },
   };
+  const layer4Workship = new GeoJSONLayer({
+    url: "./api/layer4/worshipphoto/workship.geojson",
+  });
+  layer4Workship.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color:
+            layer4WorkshipImport.features[0].properties
+                .color,
+          },
+          width:
+          layer4WorkshipImport.features[0].properties
+              .width,
+          height:
+          layer4WorkshipImport.features[0].properties
+              .height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+  const layer4Rood = new GeoJSONLayer({
+    url: "./api/layer4/worshipphoto/rood.geojson",
+  });
+  layer4Rood.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color:
+            layer4RoodImport.features[0].properties
+                .color,
+          },
+          width:
+          layer4RoodImport.features[0].properties
+              .width,
+          height:
+          layer4RoodImport.features[0].properties
+              .height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+  const layer4Photo = new GeoJSONLayer({
+    url: "./api/layer4/worshipphoto/photo.geojson",
+  });
+  layer4Photo.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color:
+            layer4PhotoImport.features[0].properties
+                .color,
+          },
+          width:
+          layer4PhotoImport.features[0].properties
+              .width,
+          height:
+          layer4PhotoImport.features[0].properties
+              .height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
 
   // Cách tạo cột hình trụ
   // const cylinderLayer = new GraphicsLayer();
@@ -5541,7 +5635,9 @@ require([
       layer4_windowBalconyPianoLeft,
       layer4_windowBalconyBigPianoLeft,
       layer4_windowBalconyDecorsLeft,
-
+      layer4Workship,
+      layer4Rood,
+      layer4Photo,
       layer4Balconybase_left,
       layer4Balconybasemain_left,
       layer4Balconybase_right,
@@ -5583,6 +5679,7 @@ require([
       layer6Roof_back,
       layer6Wall_back,
       layer6Roof_outline_back,
+      
       //cylinderLayer
     ],
   });

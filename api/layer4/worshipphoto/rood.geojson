@@ -4,20 +4,18 @@
       {
         "type": "Feature",
         "properties": {
-          "Building name": "Layer4 - gậy trường sinh 1",
-          "height": 0.08,
+          "Building name": "Thanh dọc 1 ảnh thờ",
+          "height": 4.65,
           "width": 0.06,
-          "color": "#C0C0BF",
+          "color": "#cdcdcd",
           "idb": "1"
         },
         "geometry": {
           "type": "MultiLineString",
           "coordinates": [
             [
-              [106.7029967107866, 10.776712220983631, 23.22], 
-              [106.70299671053807, 10.776991010681465, 23.22]
-
-             
+                [106.70304458987779, 10.776598456933407, 18.75],
+                [106.70304541379808, 10.776598456933405, 18.75] 
             ]
           ]
         },
@@ -26,20 +24,18 @@
       {
         "type": "Feature",
         "properties": {
-          "Building name": "Layer4 - gậy trường sinh 1",
-          "height": 0.08,
+          "Building name": "Thanh dọc 2 ảnh thờ",
+          "height": 4.65,
           "width": 0.06,
-          "color": "#C0C0BF",
+          "color": "#cdcdcd",
           "idb": "1"
         },
         "geometry": {
           "type": "MultiLineString",
           "coordinates": [
             [
-              [106.70299671047395, 10.777062956409935, 23.22], 
-              [106.7029967102254, 10.77734174610777, 23.22]
-
-             
+                [106.70305914580395, 10.776598456933067, 18.75], 
+                [106.70305996972424, 10.776598456933066, 18.75]
             ]
           ]
         },
@@ -49,19 +45,18 @@
       {
         "type": "Feature",
         "properties": {
-          "Building name": "Layer4 - gậy trường sinh 1",
-          "height": 0.08,
+          "Building name": "Thanh dọc 3 ảnh thờ",
+          "height": 4.65,
           "width": 0.06,
-          "color": "#C0C0BF",
+          "color": "#cdcdcd",
           "idb": "1"
         },
         "geometry": {
           "type": "MultiLineString",
           "coordinates": [
             [
-                [106.70298947799805, 10.77735622517291, 23.22], 
-                [106.70298947795561, 10.777401371117527, 23.22]
-
+                [106.70320351495872, 10.776598456892922, 18.75],
+                 [106.70320433887902, 10.77659845689292, 18.75]
             ]
           ]
         },
@@ -71,23 +66,23 @@
       {
         "type": "Feature",
         "properties": {
-          "Building name": "Layer4 - gậy trường sinh 1",
-          "height": 0.08,
+          "Building name": "Thanh dọc 4 ảnh thờ",
+          "height": 0.09,
           "width": 0.06,
-          "color": "#C0C0BF",
+          "color": "#cdcdcd",
           "idb": "1"
         },
         "geometry": {
           "type": "MultiLineString",
           "coordinates": [
             [
-                [106.70305163832384, 10.777415940184174, 23.22], 
-                [106.70299899882514, 10.777415940179731, 23.22]
-
+                [106.70321807088487, 10.776598456892582, 18.75], 
+                [106.70321889480518, 10.77659845689258, 18.75] 
             ]
           ]
         },
         "id": "pp1"
       }
     ]
-}
+  }
+  

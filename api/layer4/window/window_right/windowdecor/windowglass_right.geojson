@@ -20,6 +20,239 @@
         ]
       },
       "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 2",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032611893731, 10.776726430380839, 17.06],
+             [106.70326118937015, 10.776753410029016, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 3",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032611893731, 10.776782008456085, 17.06], 
+            [106.70326118937015, 10.77680898810426, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 4",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032611893731, 10.77683758653133, 17.06], 
+            [106.70326118937015, 10.776864566179507, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 5",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032611893731, 10.776893164606575, 17.06],
+             [106.70326118937015, 10.77692014425475, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 6",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032611893731, 10.776948742681821, 17.06],
+             [106.70326118937015, 10.776975722329997, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 7",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032611893731, 10.777078065128753, 17.06], 
+            [106.70326118937015, 10.777105044776928, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 8",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032611893731, 10.777133643203998, 17.06],
+             [106.70326118937015, 10.777160622852174, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 9",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032611893731, 10.777189221279244, 17.06], 
+            [106.70326118937015, 10.777216200927418, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 10",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032611893731, 10.77724479935449, 17.06], 
+            [106.70326118937015, 10.777271779002664, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    
+    
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 11",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032611893731, 10.777300377429736, 17.06], 
+            [106.70326118937015, 10.777327357077908, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 12",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7032684215797, 10.777365038653118, 17.06],
+             [106.70326842157746, 10.777392018301292, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
     }
   ]
 }

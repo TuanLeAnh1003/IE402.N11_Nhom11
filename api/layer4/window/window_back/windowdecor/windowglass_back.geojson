@@ -20,6 +20,173 @@
         ]
       },
       "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 2",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70323125345475, 10.777411983239283, 17.06], 
+            [106.70321596511361, 10.77741198323891, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
     }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Lớp kính cửa sổ 3",
+        "height": 11.2,
+        "width": 0.01,
+        "color": [128, 128, 128, 0.5],
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70304568778094, 10.777411983184082, 17.06], 
+            [106.70303039943981, 10.777411983183711, 17.06]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Lớp kính cửa sổ 4",
+          "height": 11.2,
+          "width": 0.01,
+          "color": [128, 128, 128, 0.5],
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [106.70302005463411, 10.777411983183027, 17.06],
+              [106.70300476629298, 10.777411983182658, 17.06]
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Lớp kính cửa sổ 5",
+          "height": 11.2,
+          "width": 0.01,
+          "color": [128, 128, 128, 0.5],
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [106.70319445158415, 10.77737520098343, 17.06],
+               [106.70317916324302, 10.777375200983059, 17.06]
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Lớp kính cửa sổ 6",
+          "height": 11.2,
+          "width": 0.01,
+          "color": [128, 128, 128, 0.5],
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [106.70316643821991, 10.777375200982172, 17.06],
+               [106.70315114987878, 10.777375200981801, 17.06]
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Lớp kính cửa sổ 7",
+          "height": 11.2,
+          "width": 0.01,
+          "color": [128, 128, 128, 0.5],
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [106.70313842485567, 10.777375200980915, 17.06], 
+              [106.70312313651453, 10.777375200980543, 17.06]
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Lớp kính cửa sổ 8",
+          "height": 11.2,
+          "width": 0.01,
+          "color": [128, 128, 128, 0.5],
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [106.70311041149142, 10.777375200979657, 17.06], 
+              [106.70309512315029, 10.777375200979286, 17.06]
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
+      ,
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Lớp kính cửa sổ 9",
+          "height": 11.2,
+          "width": 0.01,
+          "color": [128, 128, 128, 0.5],
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [106.70308239812718, 10.7773752009784, 17.06], 
+              [106.70306710978605, 10.777375200978028, 17.06]
+            ]
+          ]
+        },
+        "id": "pp1"
+      }
   ]
 }
