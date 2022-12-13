@@ -120,6 +120,66 @@
         ]
       },
       "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Thanh 2 cửa số chỉnh diện",
+        "height": 0.06,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7031224961266, 10.77662489698801, 20.26],
+            [106.70314108010933, 10.776624896987213, 20.26]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Thanh 3 cửa số chỉnh diện",
+        "height": 0.06,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7031224961266, 10.77662489698801, 21.23],
+            [106.70314108010933, 10.776624896987213, 21.23]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Thanh 4 cửa số chỉnh diện",
+        "height": 0.06,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7031224961266, 10.77662489698801, 22.2],
+            [106.70314108010933, 10.776624896987213, 22.2]
+          ]
+        ]
+      },
+      "id": "pp1"
     }
   ]
 }

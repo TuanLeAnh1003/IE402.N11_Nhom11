@@ -80,6 +80,46 @@
         ]
       },
       "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Thanh dọc PHẢI cửa sổ chính diện",
+        "height": 4.09,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70314071392245, 10.776624896987213, 18.11],
+            [106.70314108010933, 10.776624896987213, 18.11]
+          ]
+        ]
+      },
+      "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Thanh dọc TRÁI cửa sổ chính diện",
+        "height": 4.09,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.7031224961266, 10.77662489698801, 18.11],
+            [106.70312286231348, 10.77662489698801, 18.11]
+          ]
+        ]
+      },
+      "id": "pp1"
     }
   ]
 }
