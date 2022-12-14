@@ -247,6 +247,8 @@ import layer6Roof_outline_backImport from "./api/layer6/wallback/roof_outline_ba
 import layer6RoofDecor_baseImport from "./api/layer6/roof_decor/roofdecor_base.geojson" assert { type: "json" };
 import layer6RoofDecor_onbaseImport from "./api/layer6/roof_decor/roofdecor_onbase.geojson" assert { type: "json" };
 import layer6RoofDecor_outlineImport from "./api/layer6/roof_decor/roofdecor_outline.geojson" assert { type: "json" };
+import layer6RoofDecor_fillImport from "./api/layer6/roof_decor/roofdecor_fill.geojson" assert { type: "json" };
+import layer6RoofDecor_fill_inImport from "./api/layer6/roof_decor/roofdecor_fill_in.geojson" assert { type: "json" };
 
 // Workship decor
 import layer4WorkshipImport from "./api/layer4/worshipphoto/workship.geojson" assert { type: "json" };
@@ -5445,6 +5447,58 @@ require([
     },
   };
 
+  //Layer 6 roof decor fill
+  const layer6RoofDecor_fill = new GeoJSONLayer({
+    url: "./api/layer6/roof_decor/roofdecor_fill.geojson",
+  });
+  layer6RoofDecor_fill.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer6RoofDecor_fillImport.features[0].properties.color,
+          },
+          width: layer6RoofDecor_fillImport.features[0].properties.width,
+          height: layer6RoofDecor_fillImport.features[0].properties.height,
+          join: "miter",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "top",
+        },
+      ],
+    },
+  };
+
+  //Layer 6 roof decor fill in
+  const layer6RoofDecor_fill_in = new GeoJSONLayer({
+    url: "./api/layer6/roof_decor/roofdecor_fill_in.geojson",
+  });
+  layer6RoofDecor_fill_in.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer6RoofDecor_fill_inImport.features[0].properties.color,
+          },
+          width: layer6RoofDecor_fill_inImport.features[0].properties.width,
+          height: layer6RoofDecor_fill_inImport.features[0].properties.height,
+          join: "miter",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "top",
+        },
+      ],
+    },
+  };
+
   const layer4Workship = new GeoJSONLayer({
     url: "./api/layer4/worshipphoto/workship.geojson",
   });
@@ -5792,6 +5846,8 @@ require([
       layer6RoofDecor_base,
       layer6RoofDecor_onbase,
       layer6RoofDecor_outline,
+      layer6RoofDecor_fill,
+      layer6RoofDecor_fill_in,
       //cylinderLayer
     ],
   });
