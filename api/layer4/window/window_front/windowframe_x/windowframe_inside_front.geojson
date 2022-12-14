@@ -104,7 +104,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "Layer4 - Cửa sổ 2",
+        "Building name": "Layer4 - Cửa sổ",
         "height": 0.13,
         "width": 0.05,
         "color": "#7A5238",
@@ -124,8 +124,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "Layer4 - Thanh 2 cửa số chỉnh diện",
-        "height": 0.06,
+        "Building name": "Layer4 - Cửa sổ",
+        "height": 0.13,
         "width": 0.05,
         "color": "#7A5238",
         "idb": "1"
@@ -134,8 +134,8 @@
         "type": "MultiLineString",
         "coordinates": [
           [
-            [106.7031224961266, 10.77662489698801, 20.26],
-            [106.70314108010933, 10.776624896987213, 20.26]
+            [106.7031184680638, 10.77662489695353, 20.66],
+            [106.70314593207816, 10.77662489695163, 20.66]
           ]
         ]
       },
@@ -144,8 +144,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "Layer4 - Thanh 3 cửa số chỉnh diện",
-        "height": 0.06,
+        "Building name": "Layer4 - Cửa sổ",
+        "height": 0.13,
         "width": 0.05,
         "color": "#7A5238",
         "idb": "1"
@@ -154,8 +154,8 @@
         "type": "MultiLineString",
         "coordinates": [
           [
-            [106.7031224961266, 10.77662489698801, 21.23],
-            [106.70314108010933, 10.776624896987213, 21.23]
+            [106.7031184680638, 10.77662489695353, 21.58],
+            [106.70314593207816, 10.77662489695163, 21.58]
           ]
         ]
       },
@@ -164,8 +164,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "Layer4 - Thanh 4 cửa số chỉnh diện",
-        "height": 0.06,
+        "Building name": "Layer4 - Cửa sổ",
+        "height": 0.13,
         "width": 0.05,
         "color": "#7A5238",
         "idb": "1"
@@ -174,8 +174,8 @@
         "type": "MultiLineString",
         "coordinates": [
           [
-            [106.7031224961266, 10.77662489698801, 22.2],
-            [106.70314108010933, 10.776624896987213, 22.2]
+            [106.7031184680638, 10.77662489695353, 22.5],
+            [106.70314593207816, 10.77662489695163, 22.5]
           ]
         ]
       },
