@@ -40,6 +40,26 @@
         ]
       },
       "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cột CHÍNH GIỮA cửa số chính diện",
+        "height": 5.53,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70313137615781, 10.776624896987949, 18.03],
+            [106.70313220007822, 10.776624896987947, 18.03]
+          ]
+        ]
+      },
+      "id": "pp1"
     }
   ]
 }

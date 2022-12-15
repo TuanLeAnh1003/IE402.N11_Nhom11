@@ -240,6 +240,26 @@
         ]
       },
       "id": "pp1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Layer4 - Cửa sổ LỚN ",
+        "height": 0.06,
+        "width": 0.05,
+        "color": "#7A5238",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [106.70300055548518, 10.777013583660509, 14.1],
+            [106.70300055546147, 10.777040563308686, 14.1]
+          ]
+        ]
+      },
+      "id": "pp1"
     }
   ]
 }

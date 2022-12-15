@@ -212,6 +212,15 @@ import layer4UpperWall2_surround_rightImport from "./api/layer4/layer4_upper/upp
 import layer4UpperWall2_surround_leftImport from "./api/layer4/layer4_upper/upperWall/upperWall_left/wall2_surround_left.geojson" assert { type: "json" };
 import layer4UpperWall_above_backImport from "./api/layer4/layer4_upper/upperWall/upperWall_back/wall_above_back.geojson" assert { type: "json" };
 
+import layer4CylinderColumn_frontImport from "./api/layer4/cylinderColumn/cylinderColumn_front/cylinderColumn_front.geojson" assert { type: "json" };
+import layer4CylinderColumn_entranceImport from "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumn_entrance.geojson" assert { type: "json" };
+import layer4CylinderColumn_plinth_entranceImport from "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumn_plinth_entrance.geojson" assert { type: "json" };
+import layer4CylinderColumnFooter_frontImport from "./api/layer4/cylinderColumn/cylinderColumn_front/cylinderColumnFooter_front.geojson" assert { type: "json" };
+import layer4CylinderColumnFooter_surround_frontImport from "./api/layer4/cylinderColumn/cylinderColumn_front/cylinderColumnFooter_surround_front.geojson" assert { type: "json" };
+import layer4CylinderColumnFooter_surround_entranceImport from "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumnFooter_surround_entrance.geojson" assert { type: "json" };
+import layer4CylinderColumnFooter_entranceImport from "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumnFooter_entrance.geojson" assert { type: "json" };
+import layer4CylinderColumnHeader_entranceImport from "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumnHeader_entrance.geojson" assert { type: "json" };
+
 // import layer5Layer5Import from "./api/layer5/layer5.geojson" assert { type: "json" };
 //Layer 4 - Gate
 import layer4Gate_wallgateImport from "./api/layer4/gate/wallgate.geojson" assert { type: "json" };
@@ -246,6 +255,11 @@ import layer6Roof_top_patternImport from "./api/layer6/roof_top/roof_top_pattern
 import layer6Roof_backImport from "./api/layer6/wallback/roof_back.geojson" assert { type: "json" };
 import layer6Wall_backImport from "./api/layer6/wallback/wall_back.geojson" assert { type: "json" };
 import layer6Roof_outline_backImport from "./api/layer6/wallback/roof_outline_back.geojson" assert { type: "json" };
+import layer6RoofDecor_baseImport from "./api/layer6/roof_decor/roofdecor_base.geojson" assert { type: "json" };
+import layer6RoofDecor_onbaseImport from "./api/layer6/roof_decor/roofdecor_onbase.geojson" assert { type: "json" };
+import layer6RoofDecor_outlineImport from "./api/layer6/roof_decor/roofdecor_outline.geojson" assert { type: "json" };
+import layer6RoofDecor_fillImport from "./api/layer6/roof_decor/roofdecor_fill.geojson" assert { type: "json" };
+import layer6RoofDecor_fill_inImport from "./api/layer6/roof_decor/roofdecor_fill_in.geojson" assert { type: "json" };
 
 // Workship decor
 //vô
@@ -4922,6 +4936,205 @@ require([
       ],
     },
   };
+
+  const layer4CylinderColumn_front = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/cylinderColumn_front.geojson",
+  });
+  layer4CylinderColumn_front.renderer = {
+    type: "simple",
+    symbol: {
+      type: "point-3d",
+      symbolLayers: [
+        {
+          type: "object",
+          height:
+            layer4CylinderColumn_frontImport.features[0].properties.height,
+          width: layer4CylinderColumn_frontImport.features[0].properties.width,
+          depth: layer4CylinderColumn_frontImport.features[0].properties.depth,
+          resource: { primitive: "cylinder" },
+          material: {
+            color:
+              layer4CylinderColumn_frontImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4CylinderColumn_entrance = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumn_entrance.geojson",
+  });
+  layer4CylinderColumn_entrance.renderer = {
+    type: "simple",
+    symbol: {
+      type: "point-3d",
+      symbolLayers: [
+        {
+          type: "object",
+          height:
+            layer4CylinderColumn_entranceImport.features[0].properties.height,
+          width:
+            layer4CylinderColumn_entranceImport.features[0].properties.width,
+          depth:
+            layer4CylinderColumn_entranceImport.features[0].properties.depth,
+          resource: { primitive: "cylinder" },
+          material: {
+            color:
+              layer4CylinderColumn_entranceImport.features[0].properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4CylinderColumnFooter_surround_front = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/cylinderColumnFooter_surround_front.geojson",
+  });
+  layer4CylinderColumnFooter_surround_front.renderer = {
+    type: "simple",
+    symbol: {
+      type: "point-3d",
+      symbolLayers: [
+        {
+          type: "object",
+          height:
+            layer4CylinderColumnFooter_surround_frontImport.features[0]
+              .properties.height,
+          width:
+            layer4CylinderColumnFooter_surround_frontImport.features[0]
+              .properties.width,
+          depth:
+            layer4CylinderColumnFooter_surround_frontImport.features[0]
+              .properties.depth,
+          resource: { primitive: "cylinder" },
+          material: {
+            color:
+              layer4CylinderColumnFooter_surround_frontImport.features[0]
+                .properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4CylinderColumnFooter_surround_entrance = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumnFooter_surround_entrance.geojson",
+  });
+  layer4CylinderColumnFooter_surround_entrance.renderer = {
+    type: "simple",
+    symbol: {
+      type: "point-3d",
+      symbolLayers: [
+        {
+          type: "object",
+          height:
+            layer4CylinderColumnFooter_surround_entranceImport.features[0]
+              .properties.height,
+          width:
+            layer4CylinderColumnFooter_surround_entranceImport.features[0]
+              .properties.width,
+          depth:
+            layer4CylinderColumnFooter_surround_entranceImport.features[0]
+              .properties.depth,
+          resource: { primitive: "cylinder" },
+          material: {
+            color:
+              layer4CylinderColumnFooter_surround_entranceImport.features[0]
+                .properties.color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4CylinderColumn_plinth_entrance = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumn_plinth_entrance.geojson",
+  });
+  layer4CylinderColumn_plinth_entrance.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4CylinderColumn_plinth_entranceImport.features[0]
+            .properties.height,
+          material: {
+            color:
+              layer4CylinderColumn_plinth_entranceImport.features[0].properties
+                .color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4CylinderColumnFooter_front = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/cylinderColumnFooter_front.geojson",
+  });
+  layer4CylinderColumnFooter_front.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4CylinderColumnFooter_frontImport.features[0].properties
+            .height,
+          material: {
+            color:
+              layer4CylinderColumnFooter_frontImport.features[0].properties
+                .color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4CylinderColumnFooter_entrance = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumnFooter_entrance.geojson",
+  });
+  layer4CylinderColumnFooter_entrance.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4CylinderColumnFooter_entranceImport.features[0].properties
+            .height,
+          material: {
+            color:
+              layer4CylinderColumnFooter_entranceImport.features[0].properties
+                .color,
+          },
+        },
+      ],
+    },
+  };
+
+  const layer4CylinderColumnHeader_entrance = new GeoJSONLayer({
+    url: "./api/layer4/cylinderColumn/cylinderColumn_front/entrance/cylinderColumnHeader_entrance.geojson",
+  });
+  layer4CylinderColumnHeader_entrance.renderer = {
+    type: "simple",
+    symbol: {
+      type: "polygon-3d",
+      symbolLayers: [
+        {
+          type: "extrude",
+          size: layer4CylinderColumnHeader_entranceImport.features[0].properties
+            .height,
+          material: {
+            color:
+              layer4CylinderColumnHeader_entranceImport.features[0].properties
+                .color,
+          },
+        },
+      ],
+    },
+  };
+
   // Layer 4 - Gate arch yellow bottom
   const layer4Gate_archyellow_bottom = new GeoJSONLayer({
     url: "./api/layer4/gate/arch/arch_yellow/arch_yellow_bottom.geojson",
@@ -5169,6 +5382,137 @@ require([
       ],
     },
   };
+
+  //Layer 6 roof decor base
+  const layer6RoofDecor_base = new GeoJSONLayer({
+    url: "./api/layer6/roof_decor/roofdecor_base.geojson",
+  });
+  layer6RoofDecor_base.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer6RoofDecor_baseImport.features[0].properties.color,
+          },
+          width: layer6RoofDecor_baseImport.features[0].properties.width,
+          height: layer6RoofDecor_baseImport.features[0].properties.height,
+          join: "miter",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
+  //Layer 6 roof decor onbase
+  const layer6RoofDecor_onbase = new GeoJSONLayer({
+    url: "./api/layer6/roof_decor/roofdecor_onbase.geojson",
+  });
+  layer6RoofDecor_onbase.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer6RoofDecor_onbaseImport.features[0].properties.color,
+          },
+          width: layer6RoofDecor_onbaseImport.features[0].properties.width,
+          height: layer6RoofDecor_onbaseImport.features[0].properties.height,
+          join: "miter",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "top",
+        },
+      ],
+    },
+  };
+
+  //Layer 6 roof decor outline
+  const layer6RoofDecor_outline = new GeoJSONLayer({
+    url: "./api/layer6/roof_decor/roofdecor_outline.geojson",
+  });
+  layer6RoofDecor_outline.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer6RoofDecor_outlineImport.features[0].properties.color,
+          },
+          width: layer6RoofDecor_outlineImport.features[0].properties.width,
+          height: layer6RoofDecor_outlineImport.features[0].properties.height,
+          join: "miter",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
+
+  //Layer 6 roof decor fill
+  const layer6RoofDecor_fill = new GeoJSONLayer({
+    url: "./api/layer6/roof_decor/roofdecor_fill.geojson",
+  });
+  layer6RoofDecor_fill.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer6RoofDecor_fillImport.features[0].properties.color,
+          },
+          width: layer6RoofDecor_fillImport.features[0].properties.width,
+          height: layer6RoofDecor_fillImport.features[0].properties.height,
+          join: "miter",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "top",
+        },
+      ],
+    },
+  };
+
+  //Layer 6 roof decor fill in
+  const layer6RoofDecor_fill_in = new GeoJSONLayer({
+    url: "./api/layer6/roof_decor/roofdecor_fill_in.geojson",
+  });
+  layer6RoofDecor_fill_in.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer6RoofDecor_fill_inImport.features[0].properties.color,
+          },
+          width: layer6RoofDecor_fill_inImport.features[0].properties.width,
+          height: layer6RoofDecor_fill_inImport.features[0].properties.height,
+          join: "miter",
+          cap: "butt",
+          profileRotation: "all",
+          anchor: "top",
+        },
+      ],
+    },
+  };
+
   const layer4Workship = new GeoJSONLayer({
     url: "./api/layer4/worshipphoto/workship.geojson",
   });
@@ -5460,6 +5804,15 @@ require([
       layer4UpperWall2_surround_left,
       layer4UpperWall_above_back,
 
+      layer4CylinderColumn_front,
+      layer4CylinderColumn_entrance,
+      layer4CylinderColumnFooter_surround_front,
+      layer4CylinderColumnFooter_surround_entrance,
+      layer4CylinderColumn_plinth_entrance,
+      layer4CylinderColumnFooter_front,
+      layer4CylinderColumnFooter_entrance,
+      layer4CylinderColumnHeader_entrance,
+
       //layer4Balconybase_back,
       // layer4_windowBalconyPianoRight,
       // layer4_windowBalconyBigPianoRight,
@@ -5514,6 +5867,11 @@ require([
       layer6Wall_back,
       layer6Roof_outline_back,
 
+      layer6RoofDecor_base,
+      layer6RoofDecor_onbase,
+      layer6RoofDecor_outline,
+      layer6RoofDecor_fill,
+      layer6RoofDecor_fill_in,
       //cylinderLayer
     ],
   });
