@@ -6,10 +6,10 @@ import layer1Decors_sharp_brickImport from "./api/layer1/decors_sharp_brick.geoj
 import layer1Decors_tombImport from "./api/layer1/decors_tomb.geojson" assert { type: "json" };
 
 //vô
-import layer1Decors_backImport from "./api/layer1/decors_back/decors.geojson" assert { type: "json" };
-import layer1Decors_up_backImport from "./api/layer1/decors_back/decors_up.geojson" assert { type: "json" };
-import layer1Decors_sharp_brick_backImport from "./api/layer1/decors_back/decors_sharp_brick.geojson" assert { type: "json" };
-import layer1Decors_tomb_backImport from "./api/layer1/decors_back/decors_tomb.geojson" assert { type: "json" };
+import layer1Decors_backImport from "./api/layer1/decors.geojson" assert { type: "json" };
+import layer1Decors_up_backImport from "./api/layer1/decors_up.geojson" assert { type: "json" };
+import layer1Decors_sharp_brick_backImport from "./api/layer1/decors_sharp_brick.geojson" assert { type: "json" };
+import layer1Decors_tomb_backImport from "./api/layer1/decors_tomb.geojson" assert { type: "json" };
 
 import layer1Decors_rightImport from "./api/layer1/decors_right/decors.geojson" assert { type: "json" };
 import layer1Decors_up_rightImport from "./api/layer1/decors_right/decors_up.geojson" assert { type: "json" };
