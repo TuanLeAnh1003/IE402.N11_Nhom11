@@ -1,0 +1,26 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "Tường nằm trên cửa sổ phần trên của layer4",
+        "height": 0.14,
+        "color": "#c7c1b8",
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106.7031945431259, 10.777378708332227, 24.86],
+            [106.7031945431259, 10.777375200977962, 24.86],
+            [106.70306720132923, 10.777375200975051, 24.86],
+            [106.70306720132923, 10.777378708329312, 24.86]
+          ]
+        ]
+      },
+      "id": "pp1"
+    }
+  ]
+}
