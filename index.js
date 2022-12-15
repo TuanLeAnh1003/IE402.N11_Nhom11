@@ -1,12 +1,16 @@
 import layer1Layer1Import from "./api/layer1/layer1.geojson" assert { type: "json" };
-import layer1DecorsImport from "./api/layer1/decors_left/decors.geojson" assert { type: "json" };
-import layer1Decors_upImport from "./api/layer1/decors_left/decors_up.geojson" assert { type: "json" };
-import layer1Decors_sharp_brickImport from "./api/layer1/decors_left/decors_sharp_brick.geojson" assert { type: "json" };
-import layer1Decors_tombImport from "./api/layer1/decors_left/decors_tomb.geojson" assert { type: "json" };
+//vô
+import layer1DecorsImport from "./api/layer1/decors.geojson" assert { type: "json" };
+import layer1Decors_upImport from "./api/layer1/decors_up.geojson" assert { type: "json" };
+import layer1Decors_sharp_brickImport from "./api/layer1/decors_sharp_brick.geojson" assert { type: "json" };
+import layer1Decors_tombImport from "./api/layer1/decors_tomb.geojson" assert { type: "json" };
+
+//vô
 import layer1Decors_backImport from "./api/layer1/decors_back/decors.geojson" assert { type: "json" };
 import layer1Decors_up_backImport from "./api/layer1/decors_back/decors_up.geojson" assert { type: "json" };
 import layer1Decors_sharp_brick_backImport from "./api/layer1/decors_back/decors_sharp_brick.geojson" assert { type: "json" };
 import layer1Decors_tomb_backImport from "./api/layer1/decors_back/decors_tomb.geojson" assert { type: "json" };
+
 import layer1Decors_rightImport from "./api/layer1/decors_right/decors.geojson" assert { type: "json" };
 import layer1Decors_up_rightImport from "./api/layer1/decors_right/decors_up.geojson" assert { type: "json" };
 import layer1Decors_sharp_brick_rightImport from "./api/layer1/decors_right/decors_sharp_brick.geojson" assert { type: "json" };
@@ -24,8 +28,11 @@ import layer2Layer2_backImport from "./api/layer2/layer2_back/layer2_back.geojso
 import layer2Layer2_back_inImport from "./api/layer2/layer2_back/layer2_back_in.geojson" assert { type: "json" };
 import layer2Layer2_leftImport from "./api/layer2/layer2_left/layer2_left.geojson" assert { type: "json" };
 import layer2Layer2_left_inImport from "./api/layer2/layer2_left/layer2_left_in.geojson" assert { type: "json" };
+
+//vô
+import layer3Layer3_rightImport from "./api/layer3/layer3_right.geojson" assert { type: "json" };
+
 import layer3Layer3Import from "./api/layer3/layer3_front/layer3_front.geojson" assert { type: "json" };
-import layer3Layer3_rightImport from "./api/layer3/layer3_right/layer3_right.geojson" assert { type: "json" };
 import layer3Layer3_backImport from "./api/layer3/layer3_back/layer3_back.geojson" assert { type: "json" };
 import layer3Layer3_leftImport from "./api/layer3/layer3_left/layer3_left.geojson" assert { type: "json" };
 
@@ -47,6 +54,8 @@ import layer4Layer4_columnsLeftImport from "./api/layer4/layer4_columnsLeft/laye
 import layer4Layer4_windowBalconyPianoRightImport from "./api/layer4/layer4_window_balcony_right/window_balcony_piano.geojson" assert { type: "json" };
 import layer4Layer4_windowBalconyBigPianoRightImport from "./api/layer4/layer4_window_balcony_right/window_balcony_big_piano.geojson" assert { type: "json" };
 import layer4Layer4_windowBalconyDecorsRightImport from "./api/layer4/layer4_window_balcony_right/window_balcony_decors.geojson" assert { type: "json" };
+
+//vô
 import layer4Layer4_windowBalconyPianoLeftImport from "./api/layer4/layer4_window_balcony_left/window_balcony_piano.geojson" assert { type: "json" };
 import layer4Layer4_windowBalconyBigPianoLeftImport from "./api/layer4/layer4_window_balcony_left/window_balcony_big_piano.geojson" assert { type: "json" };
 import layer4Layer4_windowBalconyDecorsLeftImport from "./api/layer4/layer4_window_balcony_left/window_balcony_decors.geojson" assert { type: "json" };
@@ -178,12 +187,14 @@ import layer4UpperWindow2_higherPlinth_leftImport from "./api/layer4/layer4_uppe
 import layer4UpperWindow2_lowerPlinth_leftImport from "./api/layer4/layer4_upper/upperWindow2/upperWindow2_left/window_lowerPlinth_left.geojson" assert { type: "json" };
 import layer4UpperWindow2Mirror_leftImport from "./api/layer4/layer4_upper/upperWindow2/upperWindow2_left/windowMirror_left.geojson" assert { type: "json" };
 
-
-// gậy trường sinh 
+// gậy trường sinh
+//vô
 import layer4Stick_rightImport from "./api/layer4/stick/stick_right.geojson" assert { type: "json" };
+import layer4MonkeyStick_rightImport from "./api/layer4/stick/monkeystick_right.geojson" assert { type: "json" };
+
 import layer4Stick_leftImport from "./api/layer4/stick/stick_left.geojson" assert { type: "json" };
 import layer4MonkeyStick_leftImport from "./api/layer4/stick/monkeystick_left.geojson" assert { type: "json" };
-import layer4MonkeyStick_rightImport from "./api/layer4/stick/monkeystick_right.geojson" assert { type: "json" };
+
 import layer4UpperWall_surround_frontImport from "./api/layer4/layer4_upper/upperWall/upperWall_front/wall_surround_front.geojson" assert { type: "json" };
 import layer4UpperWall_surround_backImport from "./api/layer4/layer4_upper/upperWall/upperWall_back/wall_surround_back.geojson" assert { type: "json" };
 import layer4UpperWall_surround_rightImport from "./api/layer4/layer4_upper/upperWall/upperWall_right/wall_surround_right.geojson" assert { type: "json" };
@@ -237,6 +248,7 @@ import layer6Wall_backImport from "./api/layer6/wallback/wall_back.geojson" asse
 import layer6Roof_outline_backImport from "./api/layer6/wallback/roof_outline_back.geojson" assert { type: "json" };
 
 // Workship decor
+//vô
 import layer4WorkshipImport from "./api/layer4/worshipphoto/workship.geojson" assert { type: "json" };
 import layer4RoodImport from "./api/layer4/worshipphoto/rood.geojson" assert { type: "json" };
 import layer4PhotoImport from "./api/layer4/worshipphoto/photo.geojson" assert { type: "json" };
@@ -379,9 +391,10 @@ require([
     },
   };
 
+  //vô
   //--------MẶT SAU-------------------------------------------------------
   const decors_back1Layer = new GeoJSONLayer({
-    url: "./api/layer1/decors_back/decors.geojson",
+    url: "./api/layer1/decors.geojson",
   });
   decors_back1Layer.renderer = {
     type: "simple",
@@ -401,7 +414,7 @@ require([
 
   //trang trí ngựa ngựa
   const decors1_up_backLayer = new GeoJSONLayer({
-    url: "./api/layer1/decors_back/decors_up.geojson",
+    url: "./api/layer1/decors_up.geojson",
   });
   decors1_up_backLayer.renderer = {
     type: "simple",
@@ -421,7 +434,7 @@ require([
 
   //chéo chéo
   const decors1_sharp_brick_backLayer = new GeoJSONLayer({
-    url: "./api/layer1/decors_back/decors_sharp_brick.geojson",
+    url: "./api/layer1/decors_sharp_brick.geojson",
   });
   decors1_sharp_brick_backLayer.renderer = {
     type: "simple",
@@ -443,7 +456,7 @@ require([
 
   //mộ
   const decors1_tomb_backLayer = new GeoJSONLayer({
-    url: "./api/layer1/decors_back/decors_tomb.geojson",
+    url: "./api/layer1/decors_tomb.geojson",
   });
   decors1_tomb_backLayer.renderer = {
     type: "simple",
@@ -746,8 +759,9 @@ require([
 
   // Layer3
   // Nền 3 - bên phải
+  //vô
   const layer3Layer3_right = new GeoJSONLayer({
-    url: "./api/layer3/layer3_right/layer3_right.geojson",
+    url: "./api/layer3/layer3_right.geojson",
   });
   layer3Layer3_right.renderer = {
     type: "simple",
@@ -1639,8 +1653,7 @@ require([
             color:
               layer4Windowdecor_base_leftImport.features[0].properties.color,
           },
-          width:
-            layer4Windowdecor_base_leftImport.features[0].properties.width,
+          width: layer4Windowdecor_base_leftImport.features[0].properties.width,
           height:
             layer4Windowdecor_base_leftImport.features[0].properties.height,
           join: "bevel",
@@ -2786,8 +2799,8 @@ require([
     },
   };
 
-   //Gậy trường sinh bên trái
-   const layer4Stick_left = new GeoJSONLayer({
+  //Gậy trường sinh bên trái
+  const layer4Stick_left = new GeoJSONLayer({
     url: "./api/layer4/stick/stick_left.geojson",
   });
   layer4Stick_left.renderer = {
@@ -2799,15 +2812,10 @@ require([
           type: "path",
           profile: "quad",
           material: {
-            color:
-            layer4Stick_leftImport.features[0].properties
-                .color,
+            color: layer4Stick_leftImport.features[0].properties.color,
           },
-          width:
-          layer4Stick_leftImport.features[0].properties.width,
-          height:
-          layer4Stick_leftImport.features[0].properties
-              .height,
+          width: layer4Stick_leftImport.features[0].properties.width,
+          height: layer4Stick_leftImport.features[0].properties.height,
           join: "bevel",
           cap: "butt",
           profileRotation: "heading",
@@ -2830,15 +2838,10 @@ require([
           type: "path",
           profile: "quad",
           material: {
-            color:
-            layer4Stick_rightImport.features[0].properties
-                .color,
+            color: layer4Stick_rightImport.features[0].properties.color,
           },
-          width:
-          layer4Stick_rightImport.features[0].properties.width,
-          height:
-          layer4Stick_rightImport.features[0].properties
-              .height,
+          width: layer4Stick_rightImport.features[0].properties.width,
+          height: layer4Stick_rightImport.features[0].properties.height,
           join: "bevel",
           cap: "butt",
           profileRotation: "heading",
@@ -2860,15 +2863,10 @@ require([
           type: "path",
           profile: "quad",
           material: {
-            color:
-            layer4MonkeyStick_leftImport.features[0].properties
-                .color,
+            color: layer4MonkeyStick_leftImport.features[0].properties.color,
           },
-          width:
-          layer4MonkeyStick_leftImport.features[0].properties.width,
-          height:
-          layer4MonkeyStick_leftImport.features[0].properties
-              .height,
+          width: layer4MonkeyStick_leftImport.features[0].properties.width,
+          height: layer4MonkeyStick_leftImport.features[0].properties.height,
           join: "bevel",
           cap: "butt",
           profileRotation: "heading",
@@ -2877,36 +2875,31 @@ require([
       ],
     },
   };
-    // Gậy như ý bên phải
-    const layer4MonkeyStick_right = new GeoJSONLayer({
-      url: "./api/layer4/stick/monkeystick_right.geojson",
-    });
-    layer4MonkeyStick_right.renderer = {
-      type: "simple",
-      symbol: {
-        type: "line-3d",
-        symbolLayers: [
-          {
-            type: "path",
-            profile: "quad",
-            material: {
-              color:
-              layer4MonkeyStick_rightImport.features[0].properties
-                  .color,
-            },
-            width:
-            layer4MonkeyStick_rightImport.features[0].properties.width,
-            height:
-            layer4MonkeyStick_rightImport.features[0].properties
-                .height,
-            join: "bevel",
-            cap: "butt",
-            profileRotation: "heading",
-            anchor: "bottom",
+  // Gậy như ý bên phải
+  const layer4MonkeyStick_right = new GeoJSONLayer({
+    url: "./api/layer4/stick/monkeystick_right.geojson",
+  });
+  layer4MonkeyStick_right.renderer = {
+    type: "simple",
+    symbol: {
+      type: "line-3d",
+      symbolLayers: [
+        {
+          type: "path",
+          profile: "quad",
+          material: {
+            color: layer4MonkeyStick_rightImport.features[0].properties.color,
           },
-        ],
-      },
-    };
+          width: layer4MonkeyStick_rightImport.features[0].properties.width,
+          height: layer4MonkeyStick_rightImport.features[0].properties.height,
+          join: "bevel",
+          cap: "butt",
+          profileRotation: "heading",
+          anchor: "bottom",
+        },
+      ],
+    },
+  };
 
   //Khung cửa sổ viền ngoài chiều ngang mặt trái
   const layer4Windowframe_x_outside_left = new GeoJSONLayer({
@@ -4193,9 +4186,12 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4Gate_gatecolumnFooter_belowImport.features[0].properties.height,
+          size: layer4Gate_gatecolumnFooter_belowImport.features[0].properties
+            .height,
           material: {
-            color: layer4Gate_gatecolumnFooter_belowImport.features[0].properties.color,
+            color:
+              layer4Gate_gatecolumnFooter_belowImport.features[0].properties
+                .color,
           },
         },
       ],
@@ -4212,9 +4208,12 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4Gate_gatecolumnFooter_aboveImport.features[0].properties.height,
+          size: layer4Gate_gatecolumnFooter_aboveImport.features[0].properties
+            .height,
           material: {
-            color: layer4Gate_gatecolumnFooter_aboveImport.features[0].properties.color,
+            color:
+              layer4Gate_gatecolumnFooter_aboveImport.features[0].properties
+                .color,
           },
         },
       ],
@@ -4641,9 +4640,11 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWall_surround_frontImport.features[0].properties.height,
+          size: layer4UpperWall_surround_frontImport.features[0].properties
+            .height,
           material: {
-            color: layer4UpperWall_surround_frontImport.features[0].properties.color,
+            color:
+              layer4UpperWall_surround_frontImport.features[0].properties.color,
           },
         },
       ],
@@ -4660,9 +4661,11 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWall_surround_backImport.features[0].properties.height,
+          size: layer4UpperWall_surround_backImport.features[0].properties
+            .height,
           material: {
-            color: layer4UpperWall_surround_backImport.features[0].properties.color,
+            color:
+              layer4UpperWall_surround_backImport.features[0].properties.color,
           },
         },
       ],
@@ -4679,9 +4682,11 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWall_surround_rightImport.features[0].properties.height,
+          size: layer4UpperWall_surround_rightImport.features[0].properties
+            .height,
           material: {
-            color: layer4UpperWall_surround_rightImport.features[0].properties.color,
+            color:
+              layer4UpperWall_surround_rightImport.features[0].properties.color,
           },
         },
       ],
@@ -4698,9 +4703,11 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWall_surround_leftImport.features[0].properties.height,
+          size: layer4UpperWall_surround_leftImport.features[0].properties
+            .height,
           material: {
-            color: layer4UpperWall_surround_leftImport.features[0].properties.color,
+            color:
+              layer4UpperWall_surround_leftImport.features[0].properties.color,
           },
         },
       ],
@@ -4717,9 +4724,11 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWall_beneath_backImport.features[0].properties.height,
+          size: layer4UpperWall_beneath_backImport.features[0].properties
+            .height,
           material: {
-            color: layer4UpperWall_beneath_backImport.features[0].properties.color,
+            color:
+              layer4UpperWall_beneath_backImport.features[0].properties.color,
           },
         },
       ],
@@ -4736,9 +4745,11 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWall_beneath_rightImport.features[0].properties.height,
+          size: layer4UpperWall_beneath_rightImport.features[0].properties
+            .height,
           material: {
-            color: layer4UpperWall_beneath_rightImport.features[0].properties.color,
+            color:
+              layer4UpperWall_beneath_rightImport.features[0].properties.color,
           },
         },
       ],
@@ -4755,9 +4766,11 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWall_beneath_leftImport.features[0].properties.height,
+          size: layer4UpperWall_beneath_leftImport.features[0].properties
+            .height,
           material: {
-            color: layer4UpperWall_beneath_leftImport.features[0].properties.color,
+            color:
+              layer4UpperWall_beneath_leftImport.features[0].properties.color,
           },
         },
       ],
@@ -4774,9 +4787,11 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWall2_beneath_rightImport.features[0].properties.height,
+          size: layer4UpperWall2_beneath_rightImport.features[0].properties
+            .height,
           material: {
-            color: layer4UpperWall2_beneath_rightImport.features[0].properties.color,
+            color:
+              layer4UpperWall2_beneath_rightImport.features[0].properties.color,
           },
         },
       ],
@@ -4793,9 +4808,11 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWall2_beneath_leftImport.features[0].properties.height,
+          size: layer4UpperWall2_beneath_leftImport.features[0].properties
+            .height,
           material: {
-            color: layer4UpperWall2_beneath_leftImport.features[0].properties.color,
+            color:
+              layer4UpperWall2_beneath_leftImport.features[0].properties.color,
           },
         },
       ],
@@ -4812,9 +4829,11 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWall2_above_rightImport.features[0].properties.height,
+          size: layer4UpperWall2_above_rightImport.features[0].properties
+            .height,
           material: {
-            color: layer4UpperWall2_above_rightImport.features[0].properties.color,
+            color:
+              layer4UpperWall2_above_rightImport.features[0].properties.color,
           },
         },
       ],
@@ -4833,7 +4852,8 @@ require([
           type: "extrude",
           size: layer4UpperWall2_above_leftImport.features[0].properties.height,
           material: {
-            color: layer4UpperWall2_above_leftImport.features[0].properties.color,
+            color:
+              layer4UpperWall2_above_leftImport.features[0].properties.color,
           },
         },
       ],
@@ -4850,9 +4870,12 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWall2_surround_rightImport.features[0].properties.height,
+          size: layer4UpperWall2_surround_rightImport.features[0].properties
+            .height,
           material: {
-            color: layer4UpperWall2_surround_rightImport.features[0].properties.color,
+            color:
+              layer4UpperWall2_surround_rightImport.features[0].properties
+                .color,
           },
         },
       ],
@@ -4869,9 +4892,11 @@ require([
       symbolLayers: [
         {
           type: "extrude",
-          size: layer4UpperWall2_surround_leftImport.features[0].properties.height,
+          size: layer4UpperWall2_surround_leftImport.features[0].properties
+            .height,
           material: {
-            color: layer4UpperWall2_surround_leftImport.features[0].properties.color,
+            color:
+              layer4UpperWall2_surround_leftImport.features[0].properties.color,
           },
         },
       ],
@@ -4890,7 +4915,8 @@ require([
           type: "extrude",
           size: layer4UpperWall_above_backImport.features[0].properties.height,
           material: {
-            color: layer4UpperWall_above_backImport.features[0].properties.color,
+            color:
+              layer4UpperWall_above_backImport.features[0].properties.color,
           },
         },
       ],
@@ -5155,16 +5181,10 @@ require([
           type: "path",
           profile: "quad",
           material: {
-            color:
-            layer4WorkshipImport.features[0].properties
-                .color,
+            color: layer4WorkshipImport.features[0].properties.color,
           },
-          width:
-          layer4WorkshipImport.features[0].properties
-              .width,
-          height:
-          layer4WorkshipImport.features[0].properties
-              .height,
+          width: layer4WorkshipImport.features[0].properties.width,
+          height: layer4WorkshipImport.features[0].properties.height,
           join: "bevel",
           cap: "butt",
           profileRotation: "heading",
@@ -5185,16 +5205,10 @@ require([
           type: "path",
           profile: "quad",
           material: {
-            color:
-            layer4RoodImport.features[0].properties
-                .color,
+            color: layer4RoodImport.features[0].properties.color,
           },
-          width:
-          layer4RoodImport.features[0].properties
-              .width,
-          height:
-          layer4RoodImport.features[0].properties
-              .height,
+          width: layer4RoodImport.features[0].properties.width,
+          height: layer4RoodImport.features[0].properties.height,
           join: "bevel",
           cap: "butt",
           profileRotation: "heading",
@@ -5215,16 +5229,10 @@ require([
           type: "path",
           profile: "quad",
           material: {
-            color:
-            layer4PhotoImport.features[0].properties
-                .color,
+            color: layer4PhotoImport.features[0].properties.color,
           },
-          width:
-          layer4PhotoImport.features[0].properties
-              .width,
-          height:
-          layer4PhotoImport.features[0].properties
-              .height,
+          width: layer4PhotoImport.features[0].properties.width,
+          height: layer4PhotoImport.features[0].properties.height,
           join: "bevel",
           cap: "butt",
           profileRotation: "heading",
@@ -5263,18 +5271,21 @@ require([
     ground: "world-elevation",
     layers: [
       layer1Layer1,
-      decors1Layer,
-      decors1_sharp_brickLayer,
-      decors1_upLayer,
-      decors1_tombLayer,
+      // decors1Layer,
+      // decors1_sharp_brickLayer,
+      // decors1_upLayer,
+      // decors1_tombLayer,
+
+      //vô
       decors_back1Layer,
       decors1_sharp_brick_backLayer,
       decors1_up_backLayer,
       decors1_tomb_backLayer,
-      decors_right1Layer,
-      decors1_sharp_brick_rightLayer,
-      decors1_up_rightLayer,
-      decors1_tomb_rightLayer,
+
+      // decors_right1Layer,
+      // decors1_sharp_brick_rightLayer,
+      // decors1_up_rightLayer,
+      // decors1_tomb_rightLayer,
       stair1Layer,
       // layer2Layer2,
       layer2Layer2_front,
@@ -5285,10 +5296,12 @@ require([
       layer2Layer2_left_in,
       layer2Layer2_back,
       layer2Layer2_back_in,
-      layer3Layer3,
+      // layer3Layer3,
+      //vô
       layer3Layer3_right,
-      layer3Layer3_back,
-      layer3Layer3_left,
+
+      // layer3Layer3_back,
+      // layer3Layer3_left,
       layer4Layer4_front,
       layer4Layer4_wallGate,
       layer4Layer4_columns,
@@ -5422,11 +5435,13 @@ require([
       layer4UpperWindow2Mirror_left,
       layer4UpperWindow2_higherPlinth_left,
       layer4UpperWindow2_lowerPlinth_left,
-      // gậy trường sinh 
+
+      // gậy trường sinh
+      //vô
       layer4Stick_right,
-      layer4Stick_left,
-      layer4MonkeyStick_left,
       layer4MonkeyStick_right,
+      // layer4Stick_left,
+      // layer4MonkeyStick_left,
 
       layer4UpperWall_surround_front,
       layer4UpperWall_surround_back,
@@ -5446,12 +5461,14 @@ require([
       layer4UpperWall_above_back,
 
       //layer4Balconybase_back,
-      layer4_windowBalconyPianoRight,
-      layer4_windowBalconyBigPianoRight,
-      layer4_windowBalconyDecorsRight,
+      // layer4_windowBalconyPianoRight,
+      // layer4_windowBalconyBigPianoRight,
+      // layer4_windowBalconyDecorsRight,
+      //vô
       layer4_windowBalconyPianoLeft,
       layer4_windowBalconyBigPianoLeft,
       layer4_windowBalconyDecorsLeft,
+
       layer4Workship,
       layer4Rood,
       layer4Photo,
@@ -5496,7 +5513,7 @@ require([
       layer6Roof_back,
       layer6Wall_back,
       layer6Roof_outline_back,
-      
+
       //cylinderLayer
     ],
   });
